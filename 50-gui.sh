@@ -73,3 +73,12 @@ Exec = $lightdm_gtk_sed_cmd $lightdm_gtk_desktop
 EOF
 
 eval "$lightdm_gtk_sed_cmd $(GetPackageOriginalFile lightdm-gtk-greeter /${lightdm_gtk_desktop})"
+
+sed -i -f - "$(GetPackageOriginalFile lightdm-gtk-greeter /etc/lightdm/lightdm-gtk-greeter.conf)" <<EOF
+s/^#xft-dpi=/xft-dpi=150/
+s/^#xft-hintstyle=/xft-hintstyle=hintslight/
+EOF
+
+sed -i -f - "$(GetPackageOriginalFile lightdm /etc/lightdm/lightdm.conf)" <<EOF
+s/#greeter-session=.*/greeter-session=lightdm-gtk-greeter/
+EOF

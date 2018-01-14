@@ -1,0 +1,7 @@
+#!/bin/bash -e
+
+this_dir=$(readlink -f `dirname ${BASH_SOURCE[0]}`)
+
+cd $this_dir
+rm -rf 99-unsorted.sh files
+aconfmgr -c $this_dir save
