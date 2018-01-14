@@ -1,3 +1,28 @@
+AddPackage adapta-gtk-theme # An adaptive Gtk+ theme based on Material Design Guidelines
+AddPackage adwaita-icon-theme # GNOME standard icons
+AddPackage compton # X compositor that may fix tearing issues
+AddPackage dmenu # Generic menu for X
+AddPackage i3-wm # An improved dynamic tiling window manager
+AddPackage i3blocks # Define blocks for your i3bar status line
+AddPackage i3lock # An improved screenlocker based upon XCB and PAM
+AddPackage i3status # Generates status bar to use with i3bar, dzen2 or xmobar
+AddPackage lightdm-gtk-greeter-settings # Settings editor for the LightDM GTK+ Greeter
+AddPackage xautolock # An automatic X screen-locker/screen-saver
+AddPackage xclip # Command line interface to the X11 clipboard
+AddPackage xcompmgr # Composite Window-effects manager for X.org
+AddPackage xf86-input-libinput # Generic input driver for the X.Org server based on libinput
+AddPackage xf86-video-intel # X.org Intel i810/i830/i915/945G/G965+ video drivers
+AddPackage xorg-server # Xorg X server
+AddPackage xorg-twm # Tab Window Manager for the X Window System
+AddPackage xorg-xbacklight # RandR-based backlight control application
+AddPackage xorg-xdpyinfo # Display information utility for X
+AddPackage xorg-xinit # X.Org initialisation program
+AddPackage xorg-xrandr # Primitive command line interface to RandR extension
+AddPackage --foreign i3-gnome # Starts i3 inside a gnome session.
+AddPackage --foreign i3pystatus-git # i3status replacement written in python for the i3 window manager
+AddPackage --foreign xkb-switch # Program that allows to query and change the XKB layout state
+AddPackage --foreign xss-lock-git # Use external locker as X screen saver
+
 cat >"$(CreateFile /etc/X11/xorg.conf.d/00-keyboard.conf)" <<EOF
 Section "InputClass"
         Identifier "system-keyboard"
