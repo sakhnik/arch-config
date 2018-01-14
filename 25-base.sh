@@ -1,6 +1,7 @@
 AddPackage glibc # GNU C Library
 AddPackage f2fs-tools # Tools for Flash-Friendly File System (F2FS)
 AddPackage nano # Pico editor clone with enhancements
+AddPackage sudo # Give certain users the ability to run some commands as root
 
 # Specify locales
 f="$(GetPackageOriginalFile glibc /etc/locale.gen)"
@@ -15,3 +16,5 @@ cat >"$(CreateFile /etc/vconsole.conf)" <<EOF
 KEYMAP=us
 FONT=LatArCyrHeb-19
 EOF
+
+sed -i 's/^#\( %wheel ALL=(ALL) ALL\)$/\1/' "$(GetPackageOriginalFile sudo /etc/sudoers)"
