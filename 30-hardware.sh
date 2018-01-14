@@ -1,3 +1,9 @@
+AddPackage hwinfo # Hardware detection tool from openSUSE
+AddPackage iw # nl80211 based CLI configuration utility for wireless devices
+AddPackage lshw # A small tool to provide detailed information on the hardware configuration of the machine.
+AddPackage powertop # A tool to diagnose issues with power consumption and power management
+AddPackage --foreign android-udev-git # Udev rules to connect Android devices to your linux box
+
 cat >"$(CreateFile /etc/udev/rules.d/50-bluetooth.rules)" <<EOF
 # disable bluetooth
 SUBSYSTEM=="rfkill", ATTR{type}=="bluetooth", ATTR{state}="0"
