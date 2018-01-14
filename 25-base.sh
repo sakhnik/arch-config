@@ -10,3 +10,8 @@ sed -i 's/^#\(uk_UA.UTF-8\)/\1/g' "$f" # for ISO timestamps
 cat >"$(CreateFile /etc/locale.conf)" <<EOF
 LANG=uk_UA.UTF-8
 EOF
+
+cat >"$(CreateFile /etc/vconsole.conf)" <<EOF
+KEYMAP=us
+FONT=LatArCyrHeb-19
+EOF
