@@ -1,6 +1,8 @@
 IgnorePath '*/__pycache__/*'
 IgnorePath '*/texmf/*'
 IgnorePath '/boot/*'
+IgnorePath '/etc/.updated'
+IgnorePath '/etc/adjtime'
 IgnorePath '/etc/ca-certificates/*'
 IgnorePath '/etc/cups/*'
 IgnorePath '/etc/easy-rsa/*'

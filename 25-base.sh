@@ -43,3 +43,7 @@ cat >>"$(GetPackageOriginalFile filesystem /etc/hosts)" <<EOF
 172.31.149.160 pangea
 176.122.93.103  home
 EOF
+
+cat >"$(CreateFile /etc/hostname)" <<EOF
+kionia
+EOF
