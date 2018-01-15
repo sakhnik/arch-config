@@ -47,3 +47,13 @@ EOF
 cat >"$(CreateFile /etc/hostname)" <<EOF
 kionia
 EOF
+
+cat >>"$(GetPackageOriginalFile filesystem /etc/fstab)" <<EOF
+# /dev/sda1
+UUID=5c1c1997-4ce5-4d59-a7be-903861fddfa2	/         	ext4      	rw,noatime,discard,data=ordered	0 1
+
+# /dev/sda3
+UUID=2eb39e0d-1767-43fb-9787-794b452d452c	none      	swap      	discard  	0 0
+
+UUID=B8E9-4294					/boot		vfat		defaults	0 0
+EOF
