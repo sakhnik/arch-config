@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Compare the output of configuration scripts with the actual files
+
 file=${1#files}
 
 diff /tmp/aconfmgr-$USER/output/files$file $file

@@ -7,6 +7,9 @@ AddPackage zsh # A very advanced and programmable command interpreter (shell) fo
 AddPackage zsh-completions # Additional completion definitions for Zsh
 AddPackage zsh-lovers # A collection of tips, tricks and examples for the Z shell.
 
+# Local time zone
+CreateLink /etc/localtime /usr/share/zoneinfo/Europe/Kiev
+
 # Specify locales
 f="$(GetPackageOriginalFile glibc /etc/locale.gen)"
 sed -i 's/^#\(en_US.UTF-8\)/\1/g' "$f"
@@ -27,4 +30,16 @@ cat >>"$(GetPackageOriginalFile filesystem /etc/shells)" <<EOF
 /bin/zsh
 /usr/bin/zsh
 /usr/bin/git-shell
+EOF
+
+cat >>"$(GetPackageOriginalFile filesystem /etc/hosts)" <<EOF
+
+#<ip-address>	<hostname.domain.org>	<hostname>
+127.0.0.1	localhost.localdomain	localhost
+::1		localhost.localdomain	localhost
+127.0.1.1	kionia.localdomain	kionia
+
+188.166.120.156 iryska.do
+172.31.149.160 pangea
+176.122.93.103  home
 EOF
