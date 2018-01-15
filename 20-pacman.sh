@@ -38,3 +38,10 @@ sed -i -f - "$(GetPackageOriginalFile pacman /etc/pacman.conf)" <<EOF
 /#\[multilib-testing\]/,/^$/ s/^#//
 /#\[multilib\]/,/^$/ s/^#//
 EOF
+
+sed -i -f - "$(GetPackageOriginalFile pacman /etc/makepkg.conf)" <<EOF
+s/^#MAKEFLAGS=.*/MAKEFLAGS="-j5"/
+s/^COMPRESSXZ=.*/COMPRESSXZ=(xz -c -z - --threads=0)/
+s/-march=[^ ]*/-march=native/
+s/-mtune=[^ ]*/-mtune=native/
+EOF
