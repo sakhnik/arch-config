@@ -43,6 +43,7 @@ WantedBy=suspend.target
 EOF
 
 CreateLink /etc/resolv.conf /run/systemd/resolve/resolv.conf
+SetFileProperty /etc/resolv.conf mode 777
 CreateLink /etc/systemd/system/dbus-org.freedesktop.NetworkManager.service /usr/lib/systemd/system/NetworkManager.service
 CreateLink /etc/systemd/system/dbus-org.freedesktop.network1.service /usr/lib/systemd/system/systemd-networkd.service
 CreateLink /etc/systemd/system/dbus-org.freedesktop.nm-dispatcher.service /usr/lib/systemd/system/NetworkManager-dispatcher.service

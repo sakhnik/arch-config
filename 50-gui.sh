@@ -56,9 +56,6 @@ Section "InputClass"
 EndSection
 EOF
 
-lightdm_gtk_sed_cmd="/usr/bin/sed -i 's/Exec=lightdm-gtk-greeter/Exec=env GTK_THEME=Adwaita:dark lightdm-gtk-greeter/'"
-lightdm_gtk_desktop=usr/share/xgreeters/lightdm-gtk-greeter.desktop
-
 cat >"$(CreateFile /etc/pacman.d/hooks/lightdm-gtk-dark.hook)" <<EOF
 [Trigger]
 Type = File
@@ -69,10 +66,8 @@ Target = usr/share/xgreeters/lightdm-gtk-greeter.desktop
 [Action]
 Description = Updating dark theme for lightdm-gtk-greeter
 When = PostTransaction
-Exec = $lightdm_gtk_sed_cmd $lightdm_gtk_desktop
+Exec = /usr/bin/sed -i 's/Exec=lightdm-gtk-greeter/Exec=env GTK_THEME=Adwaita:dark lightdm-gtk-greeter/' usr/share/xgreeters/lightdm-gtk-greeter.desktop
 EOF
-
-eval "$lightdm_gtk_sed_cmd $(GetPackageOriginalFile lightdm-gtk-greeter /${lightdm_gtk_desktop})"
 
 sed -i -f - "$(GetPackageOriginalFile lightdm-gtk-greeter /etc/lightdm/lightdm-gtk-greeter.conf)" <<EOF
 s/^#xft-dpi=/xft-dpi=150/

@@ -2,13 +2,16 @@ AddPackage git # the fast distributed version control system
 AddPackage glibc # GNU C Library
 AddPackage f2fs-tools # Tools for Flash-Friendly File System (F2FS)
 AddPackage nano # Pico editor clone with enhancements
+AddPackage sed # GNU stream editor
+AddPackage shadow # Password and account management tool suite with support for shadow files and PAM
 AddPackage sudo # Give certain users the ability to run some commands as root
 AddPackage zsh # A very advanced and programmable command interpreter (shell) for UNIX
 AddPackage zsh-completions # Additional completion definitions for Zsh
 AddPackage zsh-lovers # A collection of tips, tricks and examples for the Z shell.
 
+CreateLink /etc/os-release ../usr/lib/os-release
 # Local time zone
-CreateLink /etc/localtime /usr/share/zoneinfo/Europe/Kiev
+CreateLink /etc/localtime ../usr/share/zoneinfo/Europe/Kiev
 
 # Specify locales
 f="$(GetPackageOriginalFile glibc /etc/locale.gen)"
