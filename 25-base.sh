@@ -57,3 +57,12 @@ UUID=2eb39e0d-1767-43fb-9787-794b452d452c	none      	swap      	discard  	0 0
 
 UUID=B8E9-4294					/boot		vfat		defaults	0 0
 EOF
+
+sed -i -f - "$(GetPackageOriginalFile util-linux /etc/pam.d/login)" <<EOF
+/^account/ i -auth       optional     pam_gnome_keyring.so
+\$a -session    optional     pam_gnome_keyring.so        auto_start
+EOF
+
+sed -i -f - "$(GetPackageOriginalFile shadow /etc/pam.d/passwd)" <<EOF
+\$a -password	optional	pam_gnome_keyring.so
+EOF
