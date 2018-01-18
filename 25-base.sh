@@ -17,6 +17,7 @@ CreateFile /etc/.pwd.lock 600 > /dev/null
 CopyFile /etc/group
 CopyFile /etc/gshadow
 CopyFile /etc/passwd
+DecryptFileTo /etc/shadow.gpg /etc/shadow
 
 # Specify locales
 f="$(GetPackageOriginalFile glibc /etc/locale.gen)"
