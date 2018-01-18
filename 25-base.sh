@@ -1,9 +1,13 @@
 AddPackage autoconf # A GNU tool for automatically configuring source code
 AddPackage automake # A GNU tool for automatically creating Makefiles
 AddPackage bash # The GNU Bourne Again shell
+AddPackage bind-tools # The ISC DNS tools
+AddPackage bridge-utils # Utilities for configuring the Linux ethernet bridge
 AddPackage bzip2 # A high-quality data compression program
 AddPackage clang # C language family frontend for LLVM
 AddPackage coreutils # The basic file, shell and text manipulation utilities of the GNU operating system
+AddPackage cpupower # Linux kernel tool to examine and tune power saving related features of your processor
+AddPackage cryptsetup # Userspace setup tool for transparent encryption of block devices using dm-crypt
 AddPackage device-mapper # Device mapper userspace library and tools
 AddPackage dhclient # A standalone DHCP client from the dhcp package
 AddPackage dhcpcd # RFC2131 compliant DHCP client daemon
@@ -27,6 +31,7 @@ AddPackage gettext # GNU internationalization library
 AddPackage git # the fast distributed version control system
 AddPackage glibc # GNU C Library
 AddPackage go # Core compiler tools for the Go programming language
+AddPackage grep # A string search utility
 AddPackage gzip # GNU compression utility
 AddPackage hdparm # A shell utility for manipulating Linux IDE drive/driver parameters
 AddPackage htop # Interactive process viewer
@@ -39,6 +44,7 @@ AddPackage iotop # View I/O usage of processes
 AddPackage iproute2 # IP Routing Utilities
 AddPackage iputils # Network monitoring tools, including ping
 AddPackage jfsutils # JFS filesystem utilities
+AddPackage less # A terminal based program for viewing text files
 AddPackage libva-intel-driver # VA-API implementation for Intel G45 and HD Graphics family
 AddPackage licenses # Standard licenses distribution package
 AddPackage linux-lts # The Linux-lts kernel and modules
