@@ -1,4 +1,3 @@
-AddPackage netctl # Profile based systemd network management
 AddPackage systemd-sysvcompat # sysvinit compat for systemd
 AddPackage --foreign systemd-boot-pacman-hook # Pacman hook to upgrade systemd-boot after systemd upgrade.
 

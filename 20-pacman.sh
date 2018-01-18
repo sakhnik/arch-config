@@ -1,5 +1,6 @@
 AddPackage pacman # A library-based package manager with dependency support
 AddPackage pacutils # Helper tools for libalpm
+AddPackage --foreign cower # A simple AUR agent with a pretentious name
 
 cat >"$(CreateFile /etc/pacman.d/hooks/paccache-remove.hook)" <<EOF
 [Trigger]
