@@ -13,6 +13,11 @@ CreateLink /etc/os-release ../usr/lib/os-release
 # Local time zone
 CreateLink /etc/localtime ../usr/share/zoneinfo/Europe/Kiev
 
+CreateFile /etc/.pwd.lock 600 > /dev/null
+CopyFile /etc/group
+CopyFile /etc/gshadow
+CopyFile /etc/passwd
+
 # Specify locales
 f="$(GetPackageOriginalFile glibc /etc/locale.gen)"
 sed -i 's/^#\(en_US.UTF-8\)/\1/g' "$f"
