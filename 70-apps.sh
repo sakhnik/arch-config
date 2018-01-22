@@ -28,7 +28,6 @@ AddPackage glade # User Interface Builder for GTK+ applications
 AddPackage glibmm-docs # C++ bindings for GLib (documentation)
 AddPackage gnome-2048 # Obtain the 2048 tile
 AddPackage gnome-backgrounds # Background images and data for GNOME
-AddPackage gnome-builder # An IDE for writing GNOME-based software
 AddPackage gnome-calculator # GNOME Scientific calculator
 AddPackage gnome-common # Common development macros for GNOME
 AddPackage gnome-contacts # Contacts Manager for GNOME
