@@ -5,7 +5,7 @@ sys:x:3:root,bin
 adm:x:4:root,daemon
 tty:x:5:sakhnik
 disk:x:6:root
-lp:x:7:daemon
+lp:x:7:cups,daemon
 mem:x:8:
 kmem:x:9:
 wheel:x:10:root,sakhnik
@@ -63,3 +63,4 @@ ceph:x:340:
 transmission:x:169:
 render:x:992:
 adbusers:x:991:
+cups:x:209:
