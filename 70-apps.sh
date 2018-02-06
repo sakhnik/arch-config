@@ -4,6 +4,7 @@ AddPackage arc-icon-theme # Arc icon theme. Official releases only.
 AddPackage asciinema # Record and share terminal sessions
 AddPackage asp # Arch Linux build source file management tool
 AddPackage atomix # Build molecules out of single atoms
+AddPackage atool # A script for managing file archives of various types
 AddPackage baobab # A graphical directory tree analyzer
 AddPackage chromium # A web browser built for speed, simplicity, and security
 AddPackage cups # The CUPS Printing System - daemon package
@@ -14,6 +15,7 @@ AddPackage empathy # A GNOME instant messaging client using the Telepathy framew
 AddPackage encfs # Encrypted filesystem in user-space
 AddPackage eog # Eye of Gnome
 AddPackage evince # Document viewer (PDF, Postscript, djvu, tiff, dvi, XPS, SyncTex support with gedit, comics books (cbr,cbz,cb7 and cbt))
+AddPackage ffmpegthumbnailer # Lightweight video thumbnailer that can be used by file managers.
 AddPackage figlet # A program for making large letters out of ordinary text
 AddPackage file-roller # Create and modify archives
 AddPackage firefox # Standalone web browser from mozilla.org
@@ -70,14 +72,18 @@ AddPackage gvfs-mtp # Virtual filesystem implementation for GIO (MTP backend; An
 AddPackage gvfs-nfs # Virtual filesystem implementation for GIO (NFS backend)
 AddPackage gvfs-smb # Virtual filesystem implementation for GIO (SMB/CIFS backend; Windows client)
 AddPackage gvim # Vi Improved, a highly configurable, improved version of the vi text editor (with advanced features, such as a GUI)
+AddPackage highlight # Fast and flexible source code highlighter (CLI version)
 AddPackage iagno # Dominate the board in a classic version of Reversi
 AddPackage josm # An editor for OpenStreetMap written in Java
+AddPackage ledger # Double-entry accounting system with a command-line reporting interface
 AddPackage libreoffice-fresh # LibreOffice branch which contains new features and program enhancements
 AddPackage libreoffice-fresh-uk # Ukrainian language pack for LibreOffice Fresh
+AddPackage lynx # A text browser for the World Wide Web
 AddPackage make # GNU make utility to maintain groups of programs
 AddPackage man-db # A utility for reading man pages
 AddPackage man-pages # Linux man pages
 AddPackage mc # Midnight Commander is a text based filemanager/shell that emulates Norton Commander
+AddPackage mediainfo # supplies technical and tag information about a video or audio file
 AddPackage mercurial # A scalable distributed SCM tool
 AddPackage mesa-demos # Mesa demos and tools incl. glxinfo + glxgears
 AddPackage mousetweaks # Mouse accessibility enhancements
@@ -89,9 +95,11 @@ AddPackage networkmanager-openconnect # NetworkManager VPN plugin for OpenConnec
 AddPackage networkmanager-openvpn # NetworkManager VPN plugin for OpenVPN
 AddPackage nginx-mainline # Lightweight HTTP server and IMAP/POP3 proxy server, mainline release
 AddPackage notification-daemon # Notification daemon for the desktop notifications framework
+AddPackage odt2txt # extracts the text out of OpenDocument Texts
 AddPackage opendesktop-fonts # Chinese TrueType Fonts
 AddPackage pass # Stores, retrieves, generates, and synchronizes passwords securely
 AddPackage pavucontrol # PulseAudio Volume Control
+AddPackage python-chardet # Python3 module for character encoding auto-detection
 AddPackage qiv # Quick Image Viewer (qiv) is a very small and fast GDK/Imlib image viewer
 AddPackage qrencode # C library for encoding data in a QR Code symbol.
 AddPackage qt4 # A cross-platform application and UI framework
@@ -117,8 +125,10 @@ AddPackage ttf-linux-libertine # Serif (Libertine) and Sans Serif (Biolinum) Ope
 AddPackage udiskie # Removable disk automounter using udisks
 AddPackage vino # A VNC server for the GNOME desktop
 AddPackage vlc # Multi-platform MPEG, VCD/DVD, and DivX player
+AddPackage w3m # Text-based Web browser as well as pager
 AddPackage wireshark-gtk # a free network protocol analyzer for Unix/Linux and Windows - GTK frontend
 AddPackage xdg-user-dirs-gtk # Creates user dirs and asks to relocalize them
+AddPackage xorg-xinput # Small commandline tool to configure devices
 AddPackage yelp # Get help with GNOME
 AddPackage youtube-dl # A small command-line program to download videos from YouTube.com and a few more sites
 
@@ -128,7 +138,6 @@ AddPackage --foreign bindfs # A FUSE filesystem for mirroring a directory to ano
 AddPackage --foreign distccd-alarm-armv7h # A toolchain for Arch ARM armv7h builds via distcc
 AddPackage --foreign doctest # The lightest feature rich C++ single header testing framework
 AddPackage --foreign gpwsafe # A commandline program for managing encrypted password databases
-AddPackage --foreign ledger # Double-entry accounting system with a command-line reporting interface
 AddPackage --foreign libcatch-cpp-headers # C++-native framework for unit-tests using only a header file
 AddPackage --foreign neovim-git # Fork of Vim aiming to improve user experience, plugins, and GUIs.
 AddPackage --foreign pamtester # Tiny program to test the pluggable authentication modules (PAM) facility
@@ -136,9 +145,11 @@ AddPackage --foreign peerflix # Streaming torrent client for node.js
 AddPackage --foreign pkgbuild-introspection # Tools for generating .AURINFO files and PKGBUILD data extraction
 AddPackage --foreign python-neovim-git # Python client to neovim, git version. Use this to keep up with neovim-git
 AddPackage --foreign python2-neovim-git # Python client to neovim, git version. Use this to keep up with neovim-git
+AddPackage --foreign python3-kitchen # Useful snippets of python code
 AddPackage --foreign qemu-user-static # A generic and open source processor emulator which achieves a good emulation speed by using dynamic translation, statically linked.
 AddPackage --foreign realvnc-vnc-viewer # VNC remote desktop client software by RealVNC
 AddPackage --foreign rtags-git # RTags is a client/server application that indexes C/C++ code.
+AddPackage --foreign rtv # Browse Reddit from your terminal
 AddPackage --foreign tor-browser-en # Tor Browser Bundle
 AddPackage --foreign ttf-opensans # Sans-serif typeface commissioned by Google
 AddPackage --foreign ttf-raleway # An elegant sans-serif font, designed in a single thin weight.

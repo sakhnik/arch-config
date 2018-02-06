@@ -25,23 +25,23 @@ AddPackage --foreign xss-lock-git # Use external locker as X screen saver
 
 cat >"$(CreateFile /etc/X11/xorg.conf.d/00-keyboard.conf)" <<EOF
 Section "InputClass"
-        Identifier "system-keyboard"
-        MatchIsKeyboard "on"
-        Option "XkbLayout" "us,ua"
-        Option "XkbVariant" ","
-        Option "XkbOptions" "grp:caps_toggle,lv3:ralt_switch,compose:rctrl-altgr"
+    Identifier "system-keyboard"
+    MatchIsKeyboard "on"
+    Option "XkbLayout" "us,ua"
+    Option "XkbVariant" ","
+    Option "XkbOptions" "grp:caps_toggle,lv3:ralt_switch,compose:rctrl-altgr"
 EndSection
 EOF
 
 cat >"$(CreateFile /etc/X11/xorg.conf.d/20-intel.conf)" <<EOF
 Section "Device"
-	Identifier "Intel Graphics" 
-	Driver "intel" 
-	BusID "PCI:0:2:0"
-	Option "Backlight" "intel_backlight" 
-	Option "TearFree" 	"true"
-	Option "AccelMethod" "sna"
-	Option "DRI" "3"
+    Identifier "Intel Graphics"
+    Driver "intel"
+    BusID "PCI:0:2:0"
+    Option "Backlight" "intel_backlight"
+    Option "TearFree"   "true"
+    Option "AccelMethod" "sna"
+    Option "DRI" "3"
 EndSection
 EOF
 
@@ -50,9 +50,10 @@ Section "InputClass"
     Identifier "touchpad"
     Driver "libinput"
     MatchIsTouchpad "on"
-	Option "Tapping" "on"
-	Option "ClickMethod" "clickfinger"
-	Option "NaturalScrolling" "true"
+    MatchDevicePath "/dev/input/event*"
+    Option "Tapping" "on"
+    Option "ClickMethod" "clickfinger"
+    Option "NaturalScrolling" "true"
 EndSection
 EOF
 

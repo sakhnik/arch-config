@@ -188,3 +188,7 @@ EOF
 sed -i -f - "$(GetPackageOriginalFile shadow /etc/pam.d/passwd)" <<EOF
 \$a -password	optional	pam_gnome_keyring.so
 EOF
+
+cat >"$(CreateFile /etc/modprobe.d/nobeep.conf)" <<EOF
+blacklist pcspkr
+EOF
