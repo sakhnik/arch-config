@@ -10,7 +10,7 @@ SUBSYSTEM=="rfkill", ATTR{type}=="bluetooth", ATTR{state}="0"
 EOF
 
 cat >"$(CreateFile /etc/sysctl.d/99-sysctl.conf)" <<EOF
-vm.swappiness=10
+vm.swappiness=60
 EOF
 
 cat >"$(CreateFile /etc/tmpfiles.d/10-ioscheduler.conf)" <<EOF
