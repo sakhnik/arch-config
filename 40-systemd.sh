@@ -70,3 +70,22 @@ CreateLink /etc/systemd/user/sockets.target.wants/gpg-agent-ssh.socket /usr/lib/
 CreateLink /etc/systemd/user/sockets.target.wants/gpg-agent.socket /usr/lib/systemd/user/gpg-agent.socket
 CreateLink /etc/systemd/user/sockets.target.wants/pipewire.socket /usr/lib/systemd/user/pipewire.socket
 CreateLink /etc/systemd/user/sockets.target.wants/pulseaudio.socket /usr/lib/systemd/user/pulseaudio.socket
+
+# The station will use systemd-boot
+cat >"$(CreateFile /boot/loader/loader.conf)" <<EOF
+#timeout 3
+default arch-lts
+EOF
+
+cat >"$(CreateFile /boot/loader/entries/arch-lts.conf)" <<EOF
+title   Arch Linux LTS
+linux   /vmlinuz-linux-lts
+initrd  /intel-ucode.img
+initrd  /initramfs-linux-lts.img
+options root=PARTUUID=ee2d9278-43e4-4112-a7cc-ee443439f9e9 add_efi_memmap intel_iommu=on acpi_backlight=none zswap.enabled=1
+EOF
+
+# Since /boot is vfat, file properties aren't preserved
+SetFileProperty /boot/loader/entries/arch-lts.conf mode 755
+SetFileProperty /boot/loader/loader.conf mode 755
+SetFileProperty /boot/vmlinuz-linux-lts mode 755

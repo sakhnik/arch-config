@@ -9,6 +9,8 @@ cat >"$(CreateFile /etc/udev/rules.d/50-bluetooth.rules)" <<EOF
 SUBSYSTEM=="rfkill", ATTR{type}=="bluetooth", ATTR{state}="0"
 EOF
 
+# Apparently, swap is good for system health:
+# https://chrisdown.name/2018/01/02/in-defence-of-swap.html
 cat >"$(CreateFile /etc/sysctl.d/99-sysctl.conf)" <<EOF
 vm.swappiness=60
 EOF

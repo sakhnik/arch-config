@@ -1,6 +1,7 @@
 IgnorePath '*/__pycache__/*'
 IgnorePath '*/texmf/*'
-IgnorePath '/boot/*'
+IgnorePath '/boot/*.img'
+IgnorePath '/boot/EFI/*'
 IgnorePath '/etc/*-'
 IgnorePath '/etc/*.*bak'
 IgnorePath '/etc/.updated'
