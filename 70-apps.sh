@@ -135,6 +135,7 @@ AddPackage youtube-dl # A small command-line program to download videos from You
 AddPackage --foreign aconfmgr-git # A configuration manager for Arch Linux
 AddPackage --foreign android-sdk-platform-tools # Platform-Tools for Google Android SDK (adb and fastboot)
 AddPackage --foreign bindfs # A FUSE filesystem for mirroring a directory to another directory, similar to 'mount --bind', with permission settings.
+AddPackage --foreign cquery # Low-latency vscode language server for large C++ code-bases, powered by libclang.
 AddPackage --foreign distccd-alarm-armv7h # A toolchain for Arch ARM armv7h builds via distcc
 AddPackage --foreign doctest # The lightest feature rich C++ single header testing framework
 AddPackage --foreign gpwsafe # A commandline program for managing encrypted password databases
@@ -148,7 +149,6 @@ AddPackage --foreign python2-neovim-git # Python client to neovim, git version. 
 AddPackage --foreign python3-kitchen # Useful snippets of python code
 AddPackage --foreign qemu-user-static # A generic and open source processor emulator which achieves a good emulation speed by using dynamic translation, statically linked.
 AddPackage --foreign realvnc-vnc-viewer # VNC remote desktop client software by RealVNC
-AddPackage --foreign rtags-git # RTags is a client/server application that indexes C/C++ code.
 AddPackage --foreign rtv # Browse Reddit from your terminal
 AddPackage --foreign tor-browser-en # Tor Browser Bundle
 AddPackage --foreign ttf-opensans # Sans-serif typeface commissioned by Google
