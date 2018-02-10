@@ -99,6 +99,7 @@ AddPackage odt2txt # extracts the text out of OpenDocument Texts
 AddPackage opendesktop-fonts # Chinese TrueType Fonts
 AddPackage pass # Stores, retrieves, generates, and synchronizes passwords securely
 AddPackage pavucontrol # PulseAudio Volume Control
+AddPackage progress # Shows running coreutils basic commands and displays stats
 AddPackage python-chardet # Python3 module for character encoding auto-detection
 AddPackage qiv # Quick Image Viewer (qiv) is a very small and fast GDK/Imlib image viewer
 AddPackage qrencode # C library for encoding data in a QR Code symbol.
