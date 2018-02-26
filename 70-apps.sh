@@ -10,6 +10,7 @@ AddPackage chromium # A web browser built for speed, simplicity, and security
 AddPackage cups # The CUPS Printing System - daemon package
 AddPackage dante # SOCKS v4 and v5 compatible proxy server and client
 AddPackage dconf-editor # dconf Editor
+AddPackage debootstrap # Bootstrap a basic Debian system
 AddPackage devhelp # API documentation browser for GNOME
 AddPackage empathy # A GNOME instant messaging client using the Telepathy framework
 AddPackage encfs # Encrypted filesystem in user-space
@@ -78,6 +79,7 @@ AddPackage josm # An editor for OpenStreetMap written in Java
 AddPackage ledger # Double-entry accounting system with a command-line reporting interface
 AddPackage libreoffice-fresh # LibreOffice branch which contains new features and program enhancements
 AddPackage libreoffice-fresh-uk # Ukrainian language pack for LibreOffice Fresh
+AddPackage lldb # Next generation, high-performance debugger
 AddPackage lynx # A text browser for the World Wide Web
 AddPackage make # GNU make utility to maintain groups of programs
 AddPackage man-db # A utility for reading man pages
@@ -89,6 +91,7 @@ AddPackage mesa-demos # Mesa demos and tools incl. glxinfo + glxgears
 AddPackage mousetweaks # Mouse accessibility enhancements
 AddPackage mpv # a free, open source, and cross-platform media player
 AddPackage nautilus # Default file manager for GNOME
+AddPackage neovim # Fork of Vim aiming to improve user experience, plugins, and GUIs
 AddPackage netbeans # IDE for Java, HTML5, PHP, Groovy, C and C++
 AddPackage nethack # A single player dungeon exploration game
 AddPackage networkmanager-openconnect # NetworkManager VPN plugin for OpenConnect
@@ -101,6 +104,8 @@ AddPackage pass # Stores, retrieves, generates, and synchronizes passwords secur
 AddPackage pavucontrol # PulseAudio Volume Control
 AddPackage progress # Shows running coreutils basic commands and displays stats
 AddPackage python-chardet # Python3 module for character encoding auto-detection
+AddPackage python-neovim # Python 3 client for neovim
+AddPackage python2-neovim # Python 2 client for neovim
 AddPackage qiv # Quick Image Viewer (qiv) is a very small and fast GDK/Imlib image viewer
 AddPackage qrencode # C library for encoding data in a QR Code symbol.
 AddPackage qt4 # A cross-platform application and UI framework
@@ -141,12 +146,9 @@ AddPackage --foreign distccd-alarm-armv7h # A toolchain for Arch ARM armv7h buil
 AddPackage --foreign doctest # The lightest feature rich C++ single header testing framework
 AddPackage --foreign gpwsafe # A commandline program for managing encrypted password databases
 AddPackage --foreign libcatch-cpp-headers # C++-native framework for unit-tests using only a header file
-AddPackage --foreign neovim-git # Fork of Vim aiming to improve user experience, plugins, and GUIs.
 AddPackage --foreign pamtester # Tiny program to test the pluggable authentication modules (PAM) facility
 AddPackage --foreign peerflix # Streaming torrent client for node.js
 AddPackage --foreign pkgbuild-introspection # Tools for generating .AURINFO files and PKGBUILD data extraction
-AddPackage --foreign python-neovim-git # Python client to neovim, git version. Use this to keep up with neovim-git
-AddPackage --foreign python2-neovim-git # Python client to neovim, git version. Use this to keep up with neovim-git
 AddPackage --foreign python3-kitchen # Useful snippets of python code
 AddPackage --foreign qemu-user-static # A generic and open source processor emulator which achieves a good emulation speed by using dynamic translation, statically linked.
 AddPackage --foreign realvnc-vnc-viewer # VNC remote desktop client software by RealVNC
