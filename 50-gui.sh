@@ -48,12 +48,19 @@ EOF
 cat >"$(CreateFile /etc/X11/xorg.conf.d/30-touchpad.conf)" <<EOF
 Section "InputClass"
     Identifier "touchpad"
-    Driver "libinput"
+    #Driver "libinput"
+    Driver "synaptics"
     MatchIsTouchpad "on"
-    MatchDevicePath "/dev/input/event*"
-    Option "Tapping" "on"
-    Option "ClickMethod" "clickfinger"
-    Option "NaturalScrolling" "true"
+    #MatchDevicePath "/dev/input/event*"
+    #Option "Tapping" "on"
+    #Option "ClickMethod" "clickfinger"
+    #Option "NaturalScrolling" "true"
+    Option "VertScrollDelta"          "-46"
+    Option "HorizScrollDelta"         "-46"
+    Option "TapButton1" "1"
+    Option "TapButton2" "3"
+    Option "TapButton3" "2"
+    Option "PalmDetect" "1"
 EndSection
 EOF
 

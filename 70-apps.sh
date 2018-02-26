@@ -134,6 +134,7 @@ AddPackage vlc # Multi-platform MPEG, VCD/DVD, and DivX player
 AddPackage w3m # Text-based Web browser as well as pager
 AddPackage wireshark-gtk # a free network protocol analyzer for Unix/Linux and Windows - GTK frontend
 AddPackage xdg-user-dirs-gtk # Creates user dirs and asks to relocalize them
+AddPackage xf86-input-synaptics # Synaptics driver for notebook touchpads
 AddPackage xorg-xinput # Small commandline tool to configure devices
 AddPackage yelp # Get help with GNOME
 AddPackage youtube-dl # A small command-line program to download videos from YouTube.com and a few more sites
