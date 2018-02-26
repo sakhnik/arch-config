@@ -14,4 +14,5 @@ rm -rf 99-unsorted.sh
 git clean -fdx files
 
 # Collect and save current configuration
-aconfmgr/aconfmgr -c $this_dir save
+cd aconfmgr
+./aconfmgr -c $this_dir save
