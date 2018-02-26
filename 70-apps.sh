@@ -139,7 +139,6 @@ AddPackage xorg-xinput # Small commandline tool to configure devices
 AddPackage yelp # Get help with GNOME
 AddPackage youtube-dl # A small command-line program to download videos from YouTube.com and a few more sites
 
-AddPackage --foreign aconfmgr-git # A configuration manager for Arch Linux
 AddPackage --foreign android-sdk-platform-tools # Platform-Tools for Google Android SDK (adb and fastboot)
 AddPackage --foreign bindfs # A FUSE filesystem for mirroring a directory to another directory, similar to 'mount --bind', with permission settings.
 AddPackage --foreign cquery # Low-latency vscode language server for large C++ code-bases, powered by libclang.

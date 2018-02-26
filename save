@@ -2,6 +2,8 @@
 
 # Recollect system information
 
+[[ -d aconfmgr ]] || git clone https://github.com/CyberShadow/aconfmgr
+
 export PACMAN=/usr/bin/pacman
 
 this_dir=$(readlink -f `dirname ${BASH_SOURCE[0]}`)
@@ -12,4 +14,4 @@ rm -rf 99-unsorted.sh
 git clean -fdx files
 
 # Collect and save current configuration
-aconfmgr -c $this_dir save
+aconfmgr/aconfmgr -c $this_dir save
