@@ -88,4 +88,3 @@ EOF
 # Since /boot is vfat, file properties aren't preserved
 SetFileProperty /boot/loader/entries/arch-lts.conf mode 755
 SetFileProperty /boot/loader/loader.conf mode 755
-SetFileProperty /boot/vmlinuz-linux-lts mode 755

@@ -192,3 +192,5 @@ EOF
 cat >"$(CreateFile /etc/modprobe.d/nobeep.conf)" <<EOF
 blacklist pcspkr
 EOF
+
+SetFileProperty /boot/vmlinuz-linux-lts mode 755
