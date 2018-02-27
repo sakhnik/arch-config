@@ -193,4 +193,9 @@ cat >"$(CreateFile /etc/modprobe.d/nobeep.conf)" <<EOF
 blacklist pcspkr
 EOF
 
+# Workaround for /boot being vfat. The file system messes permissions,
+# thus, the file is detected to be different. Copy the original file
+# from the package.
+sed -i -f - "$(GetPackageOriginalFile linux-lts /boot/vmlinuz-linux-lts)" <<EOF
+EOF
 SetFileProperty /boot/vmlinuz-linux-lts mode 755
