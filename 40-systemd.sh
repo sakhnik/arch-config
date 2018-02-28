@@ -1,5 +1,10 @@
+AddPackage linux # The Linux kernel and modules
+AddPackage linux-lts # The Linux-lts kernel and modules
 AddPackage systemd-sysvcompat # sysvinit compat for systemd
+
+AddPackage --foreign linux-lts49 # The Linux-lts49 kernel and modules
 AddPackage --foreign systemd-boot-pacman-hook # Pacman hook to upgrade systemd-boot after systemd upgrade.
+
 
 cat >"$(CreateFile /etc/systemd/journald.conf.d/00-journal-size.conf)" <<EOF
 [Journal]
@@ -72,9 +77,11 @@ CreateLink /etc/systemd/user/sockets.target.wants/pipewire.socket /usr/lib/syste
 CreateLink /etc/systemd/user/sockets.target.wants/pulseaudio.socket /usr/lib/systemd/user/pulseaudio.socket
 
 # The station will use systemd-boot
+# Boot the stable kernel 4.9 because the touchpad works the best
+# with it in Xiaomi Mi Notebook Air 12
 cat >"$(CreateFile /boot/loader/loader.conf)" <<EOF
 #timeout 3
-default arch-lts
+default arch-lts49
 EOF
 
 cat >"$(CreateFile /boot/loader/entries/arch-lts.conf)" <<EOF
@@ -85,6 +92,24 @@ initrd  /initramfs-linux-lts.img
 options root=PARTUUID=ee2d9278-43e4-4112-a7cc-ee443439f9e9 add_efi_memmap intel_iommu=on acpi_backlight=none zswap.enabled=1
 EOF
 
+cat >"$(CreateFile /boot/loader/entries/arch.conf)" <<EOF
+title   Arch Linux
+linux   /vmlinuz-linux
+initrd  /intel-ucode.img
+initrd  /initramfs-linux.img
+options root=PARTUUID=ee2d9278-43e4-4112-a7cc-ee443439f9e9 add_efi_memmap intel_iommu=on acpi_backlight=none zswap.enabled=1
+EOF
+
+cat >"$(CreateFile /boot/loader/entries/arch-lts49.conf)" <<EOF
+title   Arch Linux LTS 4.9
+linux   /vmlinuz-linux-lts49
+initrd  /intel-ucode.img
+initrd  /initramfs-linux-lts49.img
+options root=PARTUUID=ee2d9278-43e4-4112-a7cc-ee443439f9e9 add_efi_memmap intel_iommu=on acpi_backlight=none zswap.enabled=1
+EOF
+
 # Since /boot is vfat, file properties aren't preserved
 SetFileProperty /boot/loader/entries/arch-lts.conf mode 755
+SetFileProperty /boot/loader/entries/arch-lts49.conf mode 755
+SetFileProperty /boot/loader/entries/arch.conf mode 755
 SetFileProperty /boot/loader/loader.conf mode 755

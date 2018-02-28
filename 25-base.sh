@@ -47,7 +47,6 @@ AddPackage jfsutils # JFS filesystem utilities
 AddPackage less # A terminal based program for viewing text files
 AddPackage libva-intel-driver # VA-API implementation for Intel G45 and HD Graphics family
 AddPackage licenses # Standard licenses distribution package
-AddPackage linux-lts # The Linux-lts kernel and modules
 AddPackage logrotate # Rotates system logs automatically
 AddPackage lsof # Lists open files for running Unix processes
 AddPackage luarocks # Deployment and management system for Lua 5.3 modules
@@ -192,10 +191,3 @@ EOF
 cat >"$(CreateFile /etc/modprobe.d/nobeep.conf)" <<EOF
 blacklist pcspkr
 EOF
-
-# Workaround for /boot being vfat. The file system messes permissions,
-# thus, the file is detected to be different. Copy the original file
-# from the package.
-sed -i -f - "$(GetPackageOriginalFile linux-lts /boot/vmlinuz-linux-lts)" <<EOF
-EOF
-SetFileProperty /boot/vmlinuz-linux-lts mode 755
