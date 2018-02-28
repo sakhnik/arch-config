@@ -4,4 +4,4 @@
 
 file=${1#files}
 
-diff /tmp/aconfmgr-$USER/output/files$file $file
+diff aconfmgr/tmp/output/files$file $file
