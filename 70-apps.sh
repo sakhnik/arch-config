@@ -94,8 +94,6 @@ AddPackage nautilus # Default file manager for GNOME
 AddPackage neovim # Fork of Vim aiming to improve user experience, plugins, and GUIs
 AddPackage netbeans # IDE for Java, HTML5, PHP, Groovy, C and C++
 AddPackage nethack # A single player dungeon exploration game
-AddPackage networkmanager-openconnect # NetworkManager VPN plugin for OpenConnect
-AddPackage networkmanager-openvpn # NetworkManager VPN plugin for OpenVPN
 AddPackage nginx-mainline # Lightweight HTTP server and IMAP/POP3 proxy server, mainline release
 AddPackage notification-daemon # Notification daemon for the desktop notifications framework
 AddPackage odt2txt # extracts the text out of OpenDocument Texts
@@ -170,8 +168,3 @@ hwdec=vaapi
 #opengl-backend=wayland
 vo=vaapi
 EOF
-
-SetFileProperty /etc/NetworkManager/VPN/nm-openconnect-service.name deleted y
-SetFileProperty /etc/NetworkManager/VPN/nm-openvpn-service.name deleted y
-SetFileProperty /etc/NetworkManager/VPN deleted y
-SetFileProperty /etc/NetworkManager deleted y
