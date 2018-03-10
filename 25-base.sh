@@ -163,6 +163,8 @@ cat >>"$(GetPackageOriginalFile filesystem /etc/hosts)" <<EOF
 188.166.120.156 iryska.do
 172.31.149.160 pangea
 176.122.93.103  home
+
+10.0.0.3   guard
 EOF
 
 cat >"$(CreateFile /etc/hostname)" <<EOF
