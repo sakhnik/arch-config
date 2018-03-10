@@ -21,7 +21,6 @@ AddPackage xorg-xinit # X.Org initialisation program
 AddPackage xorg-xrandr # Primitive command line interface to RandR extension
 AddPackage --foreign i3-gnome # Starts i3 inside a gnome session.
 AddPackage --foreign xkb-switch # Program that allows to query and change the XKB layout state
-AddPackage --foreign xss-lock-git # Use external locker as X screen saver
 
 cat >"$(CreateFile /etc/X11/xorg.conf.d/00-keyboard.conf)" <<EOF
 Section "InputClass"

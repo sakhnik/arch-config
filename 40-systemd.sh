@@ -45,6 +45,27 @@ ExecStart=/usr/bin/modprobe tpm_tis
 WantedBy=suspend.target
 EOF
 
+# Lock the system before suspend
+cat >"$(CreateFile /etc/systemd/system/i3lock@.service)" <<EOF
+[Unit]
+Description=Start user i3-locks.h
+Before=sleep.target
+
+[Service]
+User=%I
+Type=forking
+Environment=DISPLAY=:0
+ExecStartPre=/usr/bin/xkb-switch -s us
+ExecStart=/usr/bin/i3lock -c 777777
+ExecStartPost=/usr/bin/sleep 1
+
+[Install]
+WantedBy=sleep.target
+EOF
+
+# Enable locking for the user named sakhnik
+CreateLink /etc/systemd/system/sleep.target.wants/i3lock@sakhnik.service /etc/systemd/system/i3lock@.service
+
 CreateLink /etc/resolv.conf /run/systemd/resolve/resolv.conf
 SetFileProperty /etc/resolv.conf mode 777
 CreateLink /etc/systemd/system/dbus-org.freedesktop.network1.service /usr/lib/systemd/system/systemd-networkd.service
