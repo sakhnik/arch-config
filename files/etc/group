@@ -11,7 +11,7 @@ kmem:x:9:
 wheel:x:10:root,sakhnik
 ftp:x:11:
 mail:x:12:
-uucp:x:14:
+uucp:x:14:sakhnik
 log:x:19:root
 utmp:x:20:
 locate:x:21:

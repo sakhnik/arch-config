@@ -12,7 +12,6 @@ AddPackage dante # SOCKS v4 and v5 compatible proxy server and client
 AddPackage dconf-editor # dconf Editor
 AddPackage debootstrap # Bootstrap a basic Debian system
 AddPackage devhelp # API documentation browser for GNOME
-AddPackage empathy # A GNOME instant messaging client using the Telepathy framework
 AddPackage encfs # Encrypted filesystem in user-space
 AddPackage eog # Eye of Gnome
 AddPackage evince # Document viewer (PDF, Postscript, djvu, tiff, dvi, XPS, SyncTex support with gedit, comics books (cbr,cbz,cb7 and cbt))
@@ -34,7 +33,6 @@ AddPackage gnome-backgrounds # Background images and data for GNOME
 AddPackage gnome-calculator # GNOME Scientific calculator
 AddPackage gnome-common # Common development macros for GNOME
 AddPackage gnome-contacts # Contacts Manager for GNOME
-AddPackage gnome-control-center # GNOME's main interface to configure various aspects of the desktop
 AddPackage gnome-desktop # Library with common API for various GNOME modules
 AddPackage gnome-dictionary # Look up words in dictionary sources
 AddPackage gnome-disk-utility # Disk Management Utility for GNOME
@@ -49,18 +47,15 @@ AddPackage gnome-power-manager # System power information and statistics
 AddPackage gnome-robots # Avoid the robots and make them crash into each other
 AddPackage gnome-screenshot # Take pictures of your screen
 AddPackage gnome-session # The GNOME Session Handler
-AddPackage gnome-settings-daemon # GNOME Settings Daemon
 AddPackage gnome-system-log # View your system logs
 AddPackage gnome-system-monitor # View current processes and monitor system state
 AddPackage gnome-taquin # Move tiles so that they reach their places
 AddPackage gnome-terminal # The GNOME Terminal Emulator
 AddPackage gnome-themes-standard # Standard Themes for GNOME Applications
-AddPackage gnome-tweak-tool # Customize advanced GNOME 3 options
 AddPackage gnome-user-docs # User documentation for GNOME
 AddPackage gnome-user-share # Easy to use user-level file sharing for GNOME
 AddPackage gnubg # World class backgammon application
 AddPackage gobject-introspection # Introspection system for GObject-based libraries
-AddPackage grilo-plugins # A collection of plugins for the Grilo framework
 AddPackage gst-libav # GStreamer Multimedia Framework ffmpeg Plugin
 AddPackage gst-plugins-ugly # GStreamer Multimedia Framework Ugly Plugins
 AddPackage gstreamer-vaapi # GStreamer Multimedia Framework VAAPI Plugin
@@ -90,7 +85,6 @@ AddPackage mercurial # A scalable distributed SCM tool
 AddPackage mesa-demos # Mesa demos and tools incl. glxinfo + glxgears
 AddPackage mousetweaks # Mouse accessibility enhancements
 AddPackage mpv # a free, open source, and cross-platform media player
-AddPackage nautilus # Default file manager for GNOME
 AddPackage neovim # Fork of Vim aiming to improve user experience, plugins, and GUIs
 AddPackage netbeans # IDE for Java, HTML5, PHP, Groovy, C and C++
 AddPackage nethack # A single player dungeon exploration game
@@ -101,6 +95,8 @@ AddPackage opendesktop-fonts # Chinese TrueType Fonts
 AddPackage pass # Stores, retrieves, generates, and synchronizes passwords securely
 AddPackage pavucontrol # PulseAudio Volume Control
 AddPackage progress # Shows running coreutils basic commands and displays stats
+AddPackage pulseaudio # A featureful, general-purpose sound server
+AddPackage pulseaudio-alsa # ALSA Configuration for PulseAudio
 AddPackage python-chardet # Python3 module for character encoding auto-detection
 AddPackage python-evdev # Python bindings for the Linux input subsystem
 AddPackage python-neovim # Python 3 client for neovim

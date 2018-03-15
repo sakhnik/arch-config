@@ -19,7 +19,6 @@ AddPackage xorg-xdpyinfo # Display information utility for X
 AddPackage xorg-xinit # X.Org initialisation program
 AddPackage xorg-xrandr # Primitive command line interface to RandR extension
 
-AddPackage --foreign i3-gnome # Starts i3 inside a gnome session.
 AddPackage --foreign i3pystatus # i3status replacement written in python for the i3 window manager
 AddPackage --foreign xkb-switch # Program that allows to query and change the XKB layout state
 
