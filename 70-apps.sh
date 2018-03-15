@@ -83,6 +83,7 @@ AddPackage mc # Midnight Commander is a text based filemanager/shell that emulat
 AddPackage mediainfo # supplies technical and tag information about a video or audio file
 AddPackage mercurial # A scalable distributed SCM tool
 AddPackage mesa-demos # Mesa demos and tools incl. glxinfo + glxgears
+AddPackage minicom # A serial communication program
 AddPackage mousetweaks # Mouse accessibility enhancements
 AddPackage mpv # a free, open source, and cross-platform media player
 AddPackage neovim # Fork of Vim aiming to improve user experience, plugins, and GUIs
@@ -129,6 +130,7 @@ AddPackage vino # A VNC server for the GNOME desktop
 AddPackage vlc # Multi-platform MPEG, VCD/DVD, and DivX player
 AddPackage w3m # Text-based Web browser as well as pager
 AddPackage wireshark-gtk # a free network protocol analyzer for Unix/Linux and Windows - GTK frontend
+AddPackage wvdial # A dialer program to connect to the Internet
 AddPackage xdg-user-dirs-gtk # Creates user dirs and asks to relocalize them
 AddPackage xf86-input-synaptics # Synaptics driver for notebook touchpads
 AddPackage xorg-xinput # Small commandline tool to configure devices
@@ -164,3 +166,5 @@ hwdec=vaapi
 #opengl-backend=wayland
 vo=vaapi
 EOF
+
+CopyFile /etc/minirc.dfl
