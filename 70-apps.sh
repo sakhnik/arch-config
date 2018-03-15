@@ -29,31 +29,18 @@ AddPackage gimp # GNU Image Manipulation Program
 AddPackage glade # User Interface Builder for GTK+ applications
 AddPackage glibmm-docs # C++ bindings for GLib (documentation)
 AddPackage gnome-2048 # Obtain the 2048 tile
-AddPackage gnome-backgrounds # Background images and data for GNOME
 AddPackage gnome-calculator # GNOME Scientific calculator
 AddPackage gnome-common # Common development macros for GNOME
-AddPackage gnome-contacts # Contacts Manager for GNOME
 AddPackage gnome-desktop # Library with common API for various GNOME modules
-AddPackage gnome-dictionary # Look up words in dictionary sources
-AddPackage gnome-disk-utility # Disk Management Utility for GNOME
 AddPackage gnome-font-viewer # A font viewer utility for GNOME
-AddPackage gnome-icon-theme # GNOME icon theme
 AddPackage gnome-keyring # Stores passwords and encryption keys
 AddPackage gnome-klotski # Slide blocks to solve the puzzle
 AddPackage gnome-mahjongg # Disassemble a pile of tiles by removing matching pairs
 AddPackage gnome-mines # Clear hidden mines from a minefield
 AddPackage gnome-nibbles # Guide a worm around a maze
-AddPackage gnome-power-manager # System power information and statistics
 AddPackage gnome-robots # Avoid the robots and make them crash into each other
-AddPackage gnome-screenshot # Take pictures of your screen
-AddPackage gnome-session # The GNOME Session Handler
-AddPackage gnome-system-log # View your system logs
-AddPackage gnome-system-monitor # View current processes and monitor system state
 AddPackage gnome-taquin # Move tiles so that they reach their places
 AddPackage gnome-terminal # The GNOME Terminal Emulator
-AddPackage gnome-themes-standard # Standard Themes for GNOME Applications
-AddPackage gnome-user-docs # User documentation for GNOME
-AddPackage gnome-user-share # Easy to use user-level file sharing for GNOME
 AddPackage gnubg # World class backgammon application
 AddPackage gobject-introspection # Introspection system for GObject-based libraries
 AddPackage gst-libav # GStreamer Multimedia Framework ffmpeg Plugin
