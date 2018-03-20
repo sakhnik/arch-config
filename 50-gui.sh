@@ -2,6 +2,7 @@ AddPackage adapta-gtk-theme # An adaptive Gtk+ theme based on Material Design Gu
 AddPackage adwaita-icon-theme # GNOME standard icons
 AddPackage compton # X compositor that may fix tearing issues
 AddPackage dmenu # Generic menu for X
+AddPackage gnome-themes-extra # Extra Themes for GNOME Applications
 AddPackage i3-wm # An improved dynamic tiling window manager
 AddPackage i3blocks # Define blocks for your i3bar status line
 AddPackage i3lock # An improved screenlocker based upon XCB and PAM
@@ -86,3 +87,5 @@ EOF
 sed -i -f - "$(GetPackageOriginalFile lightdm /etc/lightdm/lightdm.conf)" <<EOF
 s/#greeter-session=.*/greeter-session=lightdm-gtk-greeter/
 EOF
+
+CreateLink /etc/fonts/conf.d/10-no-sub-pixel.conf ../conf.avail/10-no-sub-pixel.conf

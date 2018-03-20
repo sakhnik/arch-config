@@ -44,6 +44,7 @@ AddPackage gnome-terminal # The GNOME Terminal Emulator
 AddPackage gnubg # World class backgammon application
 AddPackage gobject-introspection # Introspection system for GObject-based libraries
 AddPackage gst-libav # GStreamer Multimedia Framework ffmpeg Plugin
+AddPackage gst-plugins-good # GStreamer Multimedia Framework Good Plugins
 AddPackage gst-plugins-ugly # GStreamer Multimedia Framework Ugly Plugins
 AddPackage gstreamer-vaapi # GStreamer Multimedia Framework VAAPI Plugin
 AddPackage gucharmap # Gnome Unicode Charmap
@@ -104,7 +105,6 @@ AddPackage stow # Manage installation of multiple softwares in the same director
 AddPackage strace # A diagnostic, debugging and instructional userspace tracer
 AddPackage texlive-langcyrillic # TeX Live - Fonts and macro packages to typeset Cyrillic texts
 AddPackage texlive-latexextra # TeX Live - Large collection of add-on packages for LaTeX
-AddPackage totem # Movie player for the GNOME desktop based on GStreamer
 AddPackage transmission-cli # Fast, easy, and free BitTorrent client (CLI tools, daemon and web client)
 AddPackage transmission-gtk # Fast, easy, and free BitTorrent client (GTK+ GUI)
 AddPackage ttf-baekmuk # Korean fonts
