@@ -126,6 +126,7 @@ AddPackage youtube-dl # A small command-line program to download videos from You
 
 AddPackage --foreign android-sdk-platform-tools # Platform-Tools for Google Android SDK (adb and fastboot)
 AddPackage --foreign bindfs # A FUSE filesystem for mirroring a directory to another directory, similar to 'mount --bind', with permission settings.
+AddPackage --foreign binfmt-qemu-static # Register qemu-static interpreters for various binary formats
 AddPackage --foreign cquery-git # Low-latency vscode language server for large C++ code-bases, powered by libclang.
 AddPackage --foreign distccd-alarm-armv7h # A toolchain for Arch ARM armv7h builds via distcc
 AddPackage --foreign doctest # The lightest feature rich C++ single header testing framework

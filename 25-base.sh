@@ -118,7 +118,6 @@ AddPackage zsh # A very advanced and programmable command interpreter (shell) fo
 AddPackage zsh-completions # Additional completion definitions for Zsh
 AddPackage zsh-lovers # A collection of tips, tricks and examples for the Z shell.
 
-AddPackage --foreign binfmt-support # register interpreters for various binary formats
 AddPackage --foreign python-basiciw # Retrieve information such as ESSID or signal quality from wireless cards (Python module)
 
 CreateLink /etc/os-release ../usr/lib/os-release
