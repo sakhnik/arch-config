@@ -83,6 +83,7 @@ AddPackage odt2txt # extracts the text out of OpenDocument Texts
 AddPackage opendesktop-fonts # Chinese TrueType Fonts
 AddPackage pass # Stores, retrieves, generates, and synchronizes passwords securely
 AddPackage pavucontrol # PulseAudio Volume Control
+AddPackage pcsclite # PC/SC Architecture smartcard middleware library
 AddPackage progress # Shows running coreutils basic commands and displays stats
 AddPackage pulseaudio # A featureful, general-purpose sound server
 AddPackage pulseaudio-alsa # ALSA Configuration for PulseAudio
@@ -99,6 +100,7 @@ AddPackage samba # SMB Fileserver and AD Domain server
 AddPackage scrot # Simple command-line screenshot utility for X
 AddPackage seahorse # GNOME application for managing PGP keys.
 AddPackage shotwell # A digital photo organizer designed for the GNOME desktop environment
+AddPackage speedtest-cli # Command line interface for testing internet bandwidth using speedtest.net
 AddPackage sshuttle # Transparent proxy server that forwards all TCP packets over ssh
 AddPackage stellarium # A stellarium with great graphics and a nice database of sky-objects
 AddPackage stow # Manage installation of multiple softwares in the same directory tree
@@ -131,6 +133,7 @@ AddPackage --foreign cquery-git # Low-latency vscode language server for large C
 AddPackage --foreign distccd-alarm-armv7h # A toolchain for Arch ARM armv7h builds via distcc
 AddPackage --foreign doctest # The lightest feature rich C++ single header testing framework
 AddPackage --foreign gpwsafe # A commandline program for managing encrypted password databases
+AddPackage --foreign jmtpfs # mtpfs with better support for Android
 AddPackage --foreign libcatch-cpp-headers # C++-native framework for unit-tests using only a header file
 AddPackage --foreign pamtester # Tiny program to test the pluggable authentication modules (PAM) facility
 AddPackage --foreign peerflix # Streaming torrent client for node.js
