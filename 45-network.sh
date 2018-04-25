@@ -1,5 +1,10 @@
 AddPackage tinc # VPN (Virtual Private Network) daemon
 
+CreateLink /etc/systemd/system/multi-user.target.wants/tinc.service /usr/lib/systemd/system/tinc.service
+CreateLink /etc/systemd/system/tinc.service.wants/tinc@beefarm.service /usr/lib/systemd/system/tinc@.service
+
+###########################################################
+# Beefarm network
 
 cat >"$(CreateFile /etc/tinc/beefarm/tinc.conf)" <<EOF
 Name = kionia
@@ -34,3 +39,37 @@ SetFileProperty /etc/tinc/beefarm/hosts-git owner sakhnik
 CreateLink /etc/tinc/beefarm/hosts/guard ../hosts-git/guard
 CreateLink /etc/tinc/beefarm/hosts/iryska ../hosts-git/iryska
 CreateLink /etc/tinc/beefarm/hosts/kionia ../hosts-git/kionia
+
+###########################################################
+# Home network
+
+cat >"$(CreateFile /etc/tinc/home/tinc.conf)" <<EOF
+Name = kionia
+AddressFamily = ipv4
+Device = /dev/net/tun
+ConnectTo = alarmpi3
+EOF
+
+cat >"$(CreateFile /etc/tinc/home/tinc-up 755)" <<'EOF'
+#!/bin/sh
+ip link set $INTERFACE up
+ip addr add  10.0.1.2/24 dev $INTERFACE
+EOF
+
+cat >"$(CreateFile /etc/tinc/home/tinc-down 755)" <<'EOF'
+#!/bin/sh
+ip addr del 10.0.1.2/24 dev $INTERFACE
+ip link set $INTERFACE down
+EOF
+
+DecryptFileTo /etc/tinc/home/rsa_key.priv.gpg /etc/tinc/home/rsa_key.priv
+SetFileProperty /etc/tinc/home/rsa_key.priv mode 600
+
+CopyFile /etc/tinc/home/hosts-git/alarmpi3 '' sakhnik users
+CopyFile /etc/tinc/home/hosts-git/kionia '' sakhnik users
+CopyFile /etc/tinc/home/hosts-git/land '' sakhnik users
+CopyFile /etc/tinc/home/hosts-git/potter '' sakhnik users
+SetFileProperty /etc/tinc/home/hosts-git group users
+SetFileProperty /etc/tinc/home/hosts-git owner sakhnik
+CreateLink /etc/tinc/home/hosts/alarmpi3 ../hosts-git/alarmpi3
+CreateLink /etc/tinc/home/hosts/kionia ../hosts-git/kionia

@@ -1,0 +1,11 @@
+-----BEGIN RSA PUBLIC KEY-----
+MIIBCgKCAQEAz8S4yvMmlBLqWuSmIffAo8Q40OMCqgPJF2rZajlBXQ5ofujIEleG
+Sbr+qExluFzd/u4KdEzP0LMsFPXxzfWWkv6sPANgP2Cqqs1wc8A8EJNWVoIZFdkx
+dV9Lodk2YHmx9oTOqbcViX7wqd71ZcaaPXvaaSvFrphkNYouqvxzAvY9bPn1cMhF
+PMSsQo1imTpwf/I9LltmiHXtXXkEqUh/xUhRsLX30JEOGRupm2p2AFzOA++uzLux
+JkeZjm6U8XMDWSnoHauQyPnWHE88nP+koFTxyd5d2zTrKd8xFmX3/MEsug/PI5J5
+UBHJ8n9XdCvjyDLquct/I+neBdpKe+etqwIDAQAB
+-----END RSA PUBLIC KEY-----
+Ed25519PublicKey = BknGxN3q8TRnwKy4SbvIedM3ZaWKDY0b3AYywhURlGC
+Port = 32061
+Subnet = 10.0.1.3/32
