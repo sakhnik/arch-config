@@ -131,3 +131,6 @@ SetFileProperty /boot/loader/entries/arch-lts.conf mode 755
 SetFileProperty /boot/loader/entries/arch-lts49.conf mode 755
 SetFileProperty /boot/loader/entries/arch.conf mode 755
 SetFileProperty /boot/loader/loader.conf mode 755
+
+# A script to conveniently build linux-lts49
+CopyFile /usr/local/bin/build-linux-lts49.sh 755
