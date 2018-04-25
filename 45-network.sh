@@ -4,7 +4,7 @@ AddPackage tinc # VPN (Virtual Private Network) daemon
 cat >"$(CreateFile /etc/tinc/beefarm/tinc.conf)" <<EOF
 Name = kionia
 AddressFamily = ipv4
-Interface = tun0
+Device = /dev/net/tun
 ConnectTo = iryska
 EOF
 
