@@ -42,7 +42,6 @@ AddPackage gnome-robots # Avoid the robots and make them crash into each other
 AddPackage gnome-taquin # Move tiles so that they reach their places
 AddPackage gnome-terminal # The GNOME Terminal Emulator
 AddPackage gnubg # World class backgammon application
-AddPackage gobject-introspection # Introspection system for GObject-based libraries
 AddPackage gst-libav # GStreamer Multimedia Framework ffmpeg Plugin
 AddPackage gst-plugins-good # GStreamer Multimedia Framework Good Plugins
 AddPackage gst-plugins-ugly # GStreamer Multimedia Framework Ugly Plugins
