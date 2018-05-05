@@ -29,7 +29,7 @@ Section "InputClass"
     Identifier "system-keyboard"
     MatchIsKeyboard "on"
     Option "XkbLayout" "us,ua"
-    Option "XkbVariant" ","
+    Option "XkbVariant" "altgr-intl,"
     Option "XkbOptions" "grp:caps_toggle,lv3:ralt_switch,compose:rctrl-altgr"
 EndSection
 EOF
