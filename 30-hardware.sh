@@ -43,3 +43,6 @@ w    /sys/bus/pci/devices/0000:00:1f.2/power/control   - - - - auto
 w    /sys/bus/pci/devices/0000:00:1f.3/power/control   - - - - auto
 w    /sys/bus/pci/devices/0000:01:00.0/power/control   - - - - auto
 EOF
+
+# Share modprobed-db for all users
+CopyFile /etc/modprobed.db '' sakhnik users

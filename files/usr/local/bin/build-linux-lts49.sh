@@ -15,7 +15,7 @@ cd linux-lts49
 sed -i -f - PKGBUILD <<END
 /^pkgver=/ s/4\.9\.[0-9]\+/4.9.$version/
 s/make -s/make/
-/load configuration/ i make LSMOD=\$HOME/.config/modprobed.db localmodconfig
+/load configuration/ i make LSMOD=/etc/modprobed.db localmodconfig
 END
 
 updpkgsums
