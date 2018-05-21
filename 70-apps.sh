@@ -47,14 +47,6 @@ AddPackage gst-plugins-good # GStreamer Multimedia Framework Good Plugins
 AddPackage gst-plugins-ugly # GStreamer Multimedia Framework Ugly Plugins
 AddPackage gstreamer-vaapi # GStreamer Multimedia Framework VAAPI Plugin
 AddPackage gucharmap # Gnome Unicode Charmap
-AddPackage gvfs # Virtual filesystem implementation for GIO
-AddPackage gvfs-afc # Virtual filesystem implementation for GIO (AFC backend; Apple mobile devices)
-AddPackage gvfs-goa # Virtual filesystem implementation for GIO (Gnome Online Accounts backend; cloud storage)
-AddPackage gvfs-google # Virtual filesystem implementation for GIO (Google Drive backend)
-AddPackage gvfs-mtp # Virtual filesystem implementation for GIO (MTP backend; Android, media player)
-AddPackage gvfs-nfs # Virtual filesystem implementation for GIO (NFS backend)
-AddPackage gvfs-smb # Virtual filesystem implementation for GIO (SMB/CIFS backend; Windows client)
-AddPackage gvim # Vi Improved, a highly configurable, improved version of the vi text editor (with advanced features, such as a GUI)
 AddPackage highlight # Fast and flexible source code highlighter (CLI version)
 AddPackage iagno # Dominate the board in a classic version of Reversi
 AddPackage josm # An editor for OpenStreetMap written in Java
