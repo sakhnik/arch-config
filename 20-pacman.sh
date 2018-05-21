@@ -26,6 +26,20 @@ When = PostTransaction
 Exec = /usr/bin/paccache -rk2
 EOF
 
+cat >"$(CreateFile /etc/pacman.d/hooks/check-deps.hook)" <<EOF
+[Trigger]
+Operation = Upgrade
+Type = Package
+Target = *
+
+[Action]
+Description = Checking broken dependencies...
+When = PostTransaction
+Exec = /usr/local/bin/pacman-check-local-deps.sh
+EOF
+
+CopyFile /usr/local/bin/pacman-check-local-deps.sh 755
+
 sed -i '/^## Ukraine/,/^$/ s/^#//' "$(GetPackageOriginalFile pacman-mirrorlist /etc/pacman.d/mirrorlist)"
 
 sed -i -f - "$(GetPackageOriginalFile pacman /etc/pacman.conf)" <<EOF
