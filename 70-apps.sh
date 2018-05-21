@@ -47,6 +47,7 @@ AddPackage gst-plugins-good # GStreamer Multimedia Framework Good Plugins
 AddPackage gst-plugins-ugly # GStreamer Multimedia Framework Ugly Plugins
 AddPackage gstreamer-vaapi # GStreamer Multimedia Framework VAAPI Plugin
 AddPackage gucharmap # Gnome Unicode Charmap
+AddPackage gvim # Vi Improved, a highly configurable, improved version of the vi text editor (with advanced features, such as a GUI)
 AddPackage highlight # Fast and flexible source code highlighter (CLI version)
 AddPackage iagno # Dominate the board in a classic version of Reversi
 AddPackage josm # An editor for OpenStreetMap written in Java
