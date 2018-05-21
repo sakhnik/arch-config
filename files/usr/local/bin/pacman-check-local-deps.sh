@@ -5,6 +5,8 @@ blue=`tput setaf 4`
 bold=`tput bold`
 reset=`tput sgr 0`
 
+pacman=/usr/bin/pacman
+
 # Upgrading libraries may leave AUR packages broken.
 # Let's loop over all installed "foreign" packages, check their linkage
 # with ldd and rebuild those with dangling dependency.
