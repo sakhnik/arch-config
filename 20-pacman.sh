@@ -1,4 +1,5 @@
 AddPackage pacman # A library-based package manager with dependency support
+AddPackage pacman-contrib # Contributed scripts and tools for pacman systems
 AddPackage pacutils # Helper tools for libalpm
 AddPackage --foreign cower # A simple AUR agent with a pretentious name
 
