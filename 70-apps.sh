@@ -145,9 +145,9 @@ SetFileProperty /etc/mc/mc.keymap mode 777
 
 cat >"$(CreateFile /etc/mpv/mpv.conf)" <<EOF
 hwdec=vaapi
-#vo=opengl
+vo=gpu
 #opengl-backend=wayland
-vo=vaapi
+#vo=vaapi
 EOF
 
 CopyFile /etc/minirc.dfl
