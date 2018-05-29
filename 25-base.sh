@@ -66,7 +66,7 @@ AddPackage perf # Linux kernel performance auditing tool
 AddPackage perl # A highly capable, feature-rich programming language
 AddPackage perl-image-exiftool # Reader and rewriter of EXIF informations that supports raw files
 AddPackage perl-term-readline-gnu # GNU Readline XS library wrapper
-AddPackage pkg-config # A system for managing library compile/link flags
+AddPackage pkgconf # Package compiler and linker metadata toolkit
 AddPackage procps-ng # Utilities for monitoring your system and its processes
 AddPackage psmisc # Miscellaneous procfs tools
 AddPackage pv # A terminal-based tool for monitoring the progress of data through a pipeline.
