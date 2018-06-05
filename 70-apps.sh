@@ -139,8 +139,6 @@ AddPackage --foreign ttf-raleway # An elegant sans-serif font, designed in a sin
 AddPackage --foreign universal-ctags-git # Multilanguage reimplementation of the Unix ctags utility
 AddPackage --foreign wpa_supplicant_gui # A Qt frontend to wpa_supplicant
 
-CreateLink /etc/mc/mc.keymap mc.default.keymap
-SetFileProperty /etc/mc/mc.keymap mode 777
 
 cat >"$(CreateFile /etc/mpv/mpv.conf)" <<EOF
 hwdec=vaapi
