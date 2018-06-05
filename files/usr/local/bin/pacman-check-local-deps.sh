@@ -20,7 +20,6 @@ linux-lts49-docs
 linux-lts49-headers
 END
 
-    printf "\r  Checking %-48s" $pkg
     for f in `$pacman -Ql $pkg | grep -E '/(bin|lib)/.' | awk '{print $2}'`; do
         if [[ -x "$f" ]]; then
             output=$(ldd $f 2>/dev/null || continue)
