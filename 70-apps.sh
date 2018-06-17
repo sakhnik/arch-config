@@ -75,6 +75,7 @@ AddPackage odt2txt # extracts the text out of OpenDocument Texts
 AddPackage opendesktop-fonts # Chinese TrueType Fonts
 AddPackage pass # Stores, retrieves, generates, and synchronizes passwords securely
 AddPackage pavucontrol # PulseAudio Volume Control
+AddPackage pcmanfm # Extremely fast and lightweight file manager
 AddPackage pcsclite # PC/SC Architecture smartcard middleware library
 AddPackage progress # Shows running coreutils basic commands and displays stats
 AddPackage pulseaudio # A featureful, general-purpose sound server
