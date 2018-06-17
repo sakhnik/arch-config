@@ -46,6 +46,7 @@ AddPackage iputils # Network monitoring tools, including ping
 AddPackage jfsutils # JFS filesystem utilities
 AddPackage less # A terminal based program for viewing text files
 AddPackage libva-intel-driver # VA-API implementation for Intel G45 and HD Graphics family
+AddPackage libva-utils # Intel VA-API Media Applications and Scripts for libva
 AddPackage licenses # Standard licenses distribution package
 AddPackage logrotate # Rotates system logs automatically
 AddPackage lsof # Lists open files for running Unix processes
