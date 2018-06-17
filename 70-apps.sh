@@ -73,6 +73,7 @@ AddPackage nginx-mainline # Lightweight HTTP server and IMAP/POP3 proxy server, 
 AddPackage notification-daemon # Notification daemon for the desktop notifications framework
 AddPackage odt2txt # extracts the text out of OpenDocument Texts
 AddPackage opendesktop-fonts # Chinese TrueType Fonts
+AddPackage openjpeg # An open source JPEG 2000 codec
 AddPackage pass # Stores, retrieves, generates, and synchronizes passwords securely
 AddPackage pavucontrol # PulseAudio Volume Control
 AddPackage pcmanfm # Extremely fast and lightweight file manager
@@ -92,6 +93,7 @@ AddPackage qrencode # C library for encoding data in a QR Code symbol.
 AddPackage qt4 # A cross-platform application and UI framework
 AddPackage qtcreator # Lightweight, cross-platform integrated development environment
 AddPackage samba # SMB Fileserver and AD Domain server
+AddPackage schroedinger # An implemenation of the Dirac video codec in ANSI C code
 AddPackage scrot # Simple command-line screenshot utility for X
 AddPackage seahorse # GNOME application for managing PGP keys.
 AddPackage shotwell # A digital photo organizer designed for the GNOME desktop environment
@@ -125,8 +127,10 @@ AddPackage --foreign android-sdk-platform-tools # Platform-Tools for Google Andr
 AddPackage --foreign bindfs # A FUSE filesystem for mirroring a directory to another directory, similar to 'mount --bind', with permission settings.
 AddPackage --foreign binfmt-qemu-static # Register qemu-static interpreters for various binary formats
 AddPackage --foreign cquery-git # Low-latency vscode language server for large C++ code-bases, powered by libclang.
+AddPackage --foreign dcadec-git # DTS Coherent Acoustics decoder with support for HD extensions
 AddPackage --foreign distccd-alarm-armv7h # A toolchain for Arch ARM armv7h builds via distcc
 AddPackage --foreign doctest # The lightest feature rich C++ single header testing framework
+AddPackage --foreign ffmpeg2.8 # Complete solution to record, convert and stream audio and video
 AddPackage --foreign jmtpfs # mtpfs with better support for Android
 AddPackage --foreign libcatch-cpp-headers # C++-native framework for unit-tests using only a header file
 AddPackage --foreign pamtester # Tiny program to test the pluggable authentication modules (PAM) facility
