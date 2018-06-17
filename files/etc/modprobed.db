@@ -21,6 +21,7 @@ cfg80211
 cifs
 coretemp
 crc16
+crc32c_generic
 crc32c_intel
 crc32_pclmul
 crct10dif_pclmul
@@ -44,6 +45,7 @@ gf128mul
 ghash_clmulni_intel
 glue_helper
 hid
+hid_generic
 hid_rmi
 i2c_algo_bit
 i2c_designware_core
@@ -67,6 +69,8 @@ intel_powerclamp
 intel_rapl
 intel_rapl_perf
 intel_soc_dts_iosf
+intel_uncore
+intel_wmi_thunderbolt
 ip_tables
 irqbypass
 isofs
@@ -100,6 +104,8 @@ pinctrl_sunrisepoint
 processor_thermal_device
 rfkill
 rmi_core
+rng_core
+rtc_cmos
 sch_fq_codel
 scsi_mod
 sd_mod
@@ -120,6 +126,7 @@ snd_pcm
 snd_pcm_dmaengine
 snd_rawmidi
 snd_seq_device
+snd_soc_acpi
 snd_soc_core
 snd_soc_skl
 snd_soc_skl_ipc
@@ -149,6 +156,7 @@ uvcvideo
 veth
 vfat
 video
+videobuf2_common
 videobuf2_core
 videobuf2_memops
 videobuf2_v4l2
