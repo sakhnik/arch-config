@@ -1,3 +1,4 @@
+AddPackage linux # The Linux kernel and modules
 AddPackage linux-lts # The Linux-lts kernel and modules
 AddPackage systemd-sysvcompat # sysvinit compat for systemd
 
