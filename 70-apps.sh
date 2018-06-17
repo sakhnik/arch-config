@@ -77,6 +77,8 @@ AddPackage pass # Stores, retrieves, generates, and synchronizes passwords secur
 AddPackage pavucontrol # PulseAudio Volume Control
 AddPackage pcmanfm # Extremely fast and lightweight file manager
 AddPackage pcsclite # PC/SC Architecture smartcard middleware library
+AddPackage php-fpm # FastCGI Process Manager for PHP
+AddPackage php-gd # gd module for PHP
 AddPackage progress # Shows running coreutils basic commands and displays stats
 AddPackage pulseaudio # A featureful, general-purpose sound server
 AddPackage pulseaudio-alsa # ALSA Configuration for PulseAudio
