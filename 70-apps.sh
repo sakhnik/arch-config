@@ -78,8 +78,6 @@ AddPackage pass # Stores, retrieves, generates, and synchronizes passwords secur
 AddPackage pavucontrol # PulseAudio Volume Control
 AddPackage pcmanfm # Extremely fast and lightweight file manager
 AddPackage pcsclite # PC/SC Architecture smartcard middleware library
-AddPackage php-fpm # FastCGI Process Manager for PHP
-AddPackage php-gd # gd module for PHP
 AddPackage progress # Shows running coreutils basic commands and displays stats
 AddPackage pulseaudio # A featureful, general-purpose sound server
 AddPackage pulseaudio-alsa # ALSA Configuration for PulseAudio
@@ -130,7 +128,6 @@ AddPackage --foreign cquery-git # Low-latency vscode language server for large C
 AddPackage --foreign dcadec-git # DTS Coherent Acoustics decoder with support for HD extensions
 AddPackage --foreign distccd-alarm-armv7h # A toolchain for Arch ARM armv7h builds via distcc
 AddPackage --foreign doctest # The lightest feature rich C++ single header testing framework
-AddPackage --foreign ffmpeg2.8 # Complete solution to record, convert and stream audio and video
 AddPackage --foreign jmtpfs # mtpfs with better support for Android
 AddPackage --foreign libcatch-cpp-headers # C++-native framework for unit-tests using only a header file
 AddPackage --foreign pamtester # Tiny program to test the pluggable authentication modules (PAM) facility
