@@ -128,6 +128,7 @@ AddPackage --foreign cquery-git # Low-latency vscode language server for large C
 AddPackage --foreign dcadec-git # DTS Coherent Acoustics decoder with support for HD extensions
 AddPackage --foreign distccd-alarm-armv7h # A toolchain for Arch ARM armv7h builds via distcc
 AddPackage --foreign doctest # The lightest feature rich C++ single header testing framework
+AddPackage --foreign dpkg # The Debian Package Manager. Don't use it instead of Arch's 'pacman'.
 AddPackage --foreign jmtpfs # mtpfs with better support for Android
 AddPackage --foreign libcatch-cpp-headers # C++-native framework for unit-tests using only a header file
 AddPackage --foreign pamtester # Tiny program to test the pluggable authentication modules (PAM) facility
