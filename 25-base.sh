@@ -145,7 +145,12 @@ KEYMAP=us
 FONT=LatArCyrHeb-19
 EOF
 
-sed -i 's/^#\( %wheel ALL=(ALL) ALL\)$/\1/' "$(GetPackageOriginalFile sudo /etc/sudoers)"
+sed -i -f -  "$(GetPackageOriginalFile sudo /etc/sudoers)" <<EOF
+s/^#\( %wheel ALL=(ALL) ALL\)$/\1/
+/^# %wheel ALL=(ALL) NOPASSWD: ALL/ a \
+\ %wheel ALL=(ALL) NOPASSWD: /usr/bin/wpa_gui
+EOF
+
 
 cat >>"$(GetPackageOriginalFile filesystem /etc/shells)" <<EOF
 /bin/zsh
