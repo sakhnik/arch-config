@@ -15,4 +15,4 @@ git clean -fdx files
 
 # Collect and save current configuration
 cd aconfmgr
-./aconfmgr -c $this_dir save
+LANG=C ./aconfmgr -c $this_dir save
