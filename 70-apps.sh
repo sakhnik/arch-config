@@ -92,7 +92,6 @@ AddPackage qt4 # A cross-platform application and UI framework
 AddPackage qtcreator # Lightweight, cross-platform integrated development environment
 AddPackage samba # SMB Fileserver and AD Domain server
 AddPackage schroedinger # An implemenation of the Dirac video codec in ANSI C code
-AddPackage scrot # Simple command-line screenshot utility for X
 AddPackage seahorse # GNOME application for managing PGP keys.
 AddPackage shotwell # A digital photo organizer designed for the GNOME desktop environment
 AddPackage speedtest-cli # Command line interface for testing internet bandwidth using speedtest.net
@@ -116,6 +115,7 @@ AddPackage w3m # Text-based Web browser as well as pager
 AddPackage wireshark-gtk # a free network protocol analyzer for Unix/Linux and Windows - GTK frontend
 AddPackage wvdial # A dialer program to connect to the Internet
 AddPackage xdg-user-dirs-gtk # Creates user dirs and asks to relocalize them
+AddPackage xdotool # Command-line X11 automation tool
 AddPackage xf86-input-synaptics # Synaptics driver for notebook touchpads
 AddPackage xorg-xinput # Small commandline tool to configure devices
 AddPackage yelp # Get help with GNOME
