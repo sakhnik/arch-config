@@ -1,6 +1,7 @@
 AddPackage aisleriot # A collection of patience games written in guile scheme
 AddPackage arc-gtk-theme # A flat theme with transparent elements for GTK 3, GTK 2 and Gnome-Shell
 AddPackage arc-icon-theme # Arc icon theme. Official releases only.
+AddPackage arch-install-scripts # Scripts to aid in installing Arch Linux
 AddPackage asciinema # Record and share terminal sessions
 AddPackage asp # Arch Linux build source file management tool
 AddPackage atomix # Build molecules out of single atoms
