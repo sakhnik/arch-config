@@ -21,7 +21,7 @@ proc:x:26:polkitd
 http:x:33:
 games:x:50:
 lock:x:54:
-network:x:90:
+network:x:90:sakhnik
 video:x:91:sakhnik,guest,sandra
 audio:x:92:
 optical:x:93:
