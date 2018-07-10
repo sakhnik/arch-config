@@ -9,6 +9,7 @@ AddPackage i3lock # An improved screenlocker based upon XCB and PAM
 AddPackage i3status # Generates status bar to use with i3bar, dzen2 or xmobar
 AddPackage lightdm-gtk-greeter-settings # Settings editor for the LightDM GTK+ Greeter
 AddPackage sway # i3 compatible window manager for Wayland
+AddPackage x11-ssh-askpass # Lightweight passphrase dialog for SSH
 AddPackage xautolock # An automatic X screen-locker/screen-saver
 AddPackage xclip # Command line interface to the X11 clipboard
 AddPackage xcompmgr # Composite Window-effects manager for X.org
