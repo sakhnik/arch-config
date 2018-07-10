@@ -67,7 +67,6 @@ AddPackage mesa-demos # Mesa demos and tools incl. glxinfo + glxgears
 AddPackage minicom # A serial communication program
 AddPackage mousetweaks # Mouse accessibility enhancements
 AddPackage mpv # a free, open source, and cross-platform media player
-AddPackage neovim # Fork of Vim aiming to improve user experience, plugins, and GUIs
 AddPackage netbeans # IDE for Java, HTML5, PHP, Groovy, C and C++
 AddPackage nethack # A single player dungeon exploration game
 AddPackage nginx-mainline # Lightweight HTTP server and IMAP/POP3 proxy server, mainline release
@@ -132,6 +131,7 @@ AddPackage --foreign doctest # The lightest feature rich C++ single header testi
 AddPackage --foreign dpkg # The Debian Package Manager. Don't use it instead of Arch's 'pacman'.
 AddPackage --foreign jmtpfs # mtpfs with better support for Android
 AddPackage --foreign libcatch-cpp-headers # C++-native framework for unit-tests using only a header file
+AddPackage --foreign neovim-git # Fork of Vim aiming to improve user experience, plugins, and GUIs.
 AddPackage --foreign pamtester # Tiny program to test the pluggable authentication modules (PAM) facility
 AddPackage --foreign peerflix # Streaming torrent client for node.js
 AddPackage --foreign pkgbuild-introspection # Tools for generating .AURINFO files and PKGBUILD data extraction
