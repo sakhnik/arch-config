@@ -1,12 +1,9 @@
 #!/bin/bash -ex
 
-die() {
-    echo >&2 "$@"
-    exit 1
-}
+version=`curl https://www.kernel.org 2>/dev/null | perl -ne 'print "$1" if /linux-4\.9\.(\d+).tar.xz/'`
+[[ $# -eq 1 ]] && version=$1
 
-[[ $# -eq 1 ]] || die "Usage: `basename $0` patch"
-version=$1
+echo "Building 4.9.$version"
 
 cd /tmp
 [[ -d linux-lts49 ]] && rm -rf linux-lts49
