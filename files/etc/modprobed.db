@@ -71,6 +71,7 @@ intel_rapl_perf
 intel_soc_dts_iosf
 intel_uncore
 intel_wmi_thunderbolt
+iptable_nat
 ip_tables
 irqbypass
 isofs
@@ -85,6 +86,7 @@ kvm_intel
 led_class
 libahci
 libata
+libcrc32c
 libps2
 loop
 lrw
@@ -96,6 +98,12 @@ mei
 mei_me
 mousedev
 msr
+nf_conntrack
+nf_conntrack_ipv4
+nf_defrag_ipv4
+nf_nat
+nf_nat_ipv4
+nf_nat_redirect
 nls_cp437
 nls_iso8859_1
 pcbc
@@ -168,3 +176,6 @@ x86_pkg_temp_thermal
 xhci_hcd
 xhci_pci
 x_tables
+xt_hl
+xt_REDIRECT
+xt_tcpudp
