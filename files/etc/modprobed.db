@@ -9,6 +9,7 @@ agpgart
 ahci
 arc4
 atkbd
+auth_rpcgss
 battery
 bluetooth
 btbcm
@@ -44,6 +45,7 @@ fuse
 gf128mul
 ghash_clmulni_intel
 glue_helper
+grace
 hid
 hid_generic
 hid_rmi
@@ -88,6 +90,7 @@ libahci
 libata
 libcrc32c
 libps2
+lockd
 loop
 lrw
 mac80211
@@ -104,6 +107,10 @@ nf_defrag_ipv4
 nf_nat
 nf_nat_ipv4
 nf_nat_redirect
+nfs
+nfs_acl
+nfsv3
+nfsv4
 nls_cp437
 nls_iso8859_1
 pcbc
@@ -113,6 +120,7 @@ processor_thermal_device
 rfkill
 rmi_core
 rng_core
+rpcsec_gss_krb5
 rtc_cmos
 sch_fq_codel
 scsi_mod
@@ -146,6 +154,7 @@ snd_usb_audio
 snd_usbmidi_lib
 soundcore
 sparse_keymap
+sunrpc
 syscopyarea
 sysfillrect
 sysimgblt
