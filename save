@@ -5,6 +5,7 @@
 [[ -d aconfmgr ]] || git clone https://github.com/CyberShadow/aconfmgr
 
 export PACMAN=/usr/bin/pacman
+export DISPLAY=
 
 this_dir=$(readlink -f `dirname ${BASH_SOURCE[0]}`)
 
