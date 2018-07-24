@@ -73,3 +73,38 @@ SetFileProperty /etc/tinc/home/hosts-git group users
 SetFileProperty /etc/tinc/home/hosts-git owner sakhnik
 CreateLink /etc/tinc/home/hosts/alarmpi3 ../hosts-git/alarmpi3
 CreateLink /etc/tinc/home/hosts/kionia ../hosts-git/kionia
+
+
+###########################################################
+# Farm network
+
+cat >"$(CreateFile /etc/tinc/farm/tinc.conf)" <<EOF
+Name = kionia
+AddressFamily = ipv4
+Device = /dev/net/tun
+ConnectTo = alarmpi3
+EOF
+
+cat >"$(CreateFile /etc/tinc/farm/tinc-up 755)" <<'EOF'
+#!/bin/sh
+ip link set $INTERFACE up
+ip addr add  10.0.2.3/24 dev $INTERFACE
+EOF
+
+cat >"$(CreateFile /etc/tinc/farm/tinc-down 755)" <<'EOF'
+#!/bin/sh
+ip addr del 10.0.2.3/24 dev $INTERFACE
+ip link set $INTERFACE down
+EOF
+
+DecryptFileTo /etc/tinc/farm/rsa_key.priv.gpg /etc/tinc/farm/rsa_key.priv
+SetFileProperty /etc/tinc/farm/rsa_key.priv mode 600
+
+CopyFile /etc/tinc/farm/tinc-farm/alarmpi3 '' sakhnik users
+CopyFile /etc/tinc/farm/tinc-farm/kionia '' sakhnik users
+CopyFile /etc/tinc/farm/tinc-farm/pangea '' sakhnik users
+SetFileProperty /etc/tinc/farm/tinc-farm group users
+SetFileProperty /etc/tinc/farm/tinc-farm owner sakhnik
+CreateLink /etc/tinc/farm/hosts/alarmpi3 ../tinc-farm/alarmpi3
+CreateLink /etc/tinc/farm/hosts/kionia ../tinc-farm/kionia
+CreateLink /etc/tinc/farm/hosts/pangea ../tinc-farm/pangea
