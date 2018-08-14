@@ -23,6 +23,7 @@ AddPackage xorg-xinit # X.Org initialisation program
 AddPackage xorg-xrandr # Primitive command line interface to RandR extension
 
 AddPackage --foreign i3pystatus # i3status replacement written in python for the i3 window manager
+AddPackage --foreign python-colour # Colour representations manipulation library (RGB, HSL, web, ...)
 AddPackage --foreign xkb-switch # Program that allows to query and change the XKB layout state
 
 cat >"$(CreateFile /etc/X11/xorg.conf.d/00-keyboard.conf)" <<EOF

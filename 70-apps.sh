@@ -55,6 +55,7 @@ AddPackage josm # An editor for OpenStreetMap written in Java
 AddPackage ledger # Double-entry accounting system with a command-line reporting interface
 AddPackage libreoffice-fresh # LibreOffice branch which contains new features and program enhancements
 AddPackage libreoffice-fresh-uk # Ukrainian language pack for LibreOffice Fresh
+AddPackage libvncserver # Cross-platform C libraries that allow you to easily implement VNC server or client functionality
 AddPackage lldb # Next generation, high-performance debugger
 AddPackage lynx # A text browser for the World Wide Web
 AddPackage make # GNU make utility to maintain groups of programs
@@ -90,11 +91,13 @@ AddPackage qiv # Quick Image Viewer (qiv) is a very small and fast GDK/Imlib ima
 AddPackage qrencode # C library for encoding data in a QR Code symbol.
 AddPackage qt4 # A cross-platform application and UI framework
 AddPackage qtcreator # Lightweight, cross-platform integrated development environment
+AddPackage remmina # remote desktop client written in GTK+
 AddPackage samba # SMB Fileserver and AD Domain server
 AddPackage schroedinger # An implemenation of the Dirac video codec in ANSI C code
 AddPackage seahorse # GNOME application for managing PGP keys.
 AddPackage shotwell # A digital photo organizer designed for the GNOME desktop environment
 AddPackage speedtest-cli # Command line interface for testing internet bandwidth using speedtest.net
+AddPackage spice-gtk # GTK+ client library for SPICE
 AddPackage sshuttle # Transparent proxy server that forwards all TCP packets over ssh
 AddPackage stellarium # A stellarium with great graphics and a nice database of sky-objects
 AddPackage stow # Manage installation of multiple softwares in the same directory tree
