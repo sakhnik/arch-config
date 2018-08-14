@@ -41,7 +41,11 @@ EOF
 
 CopyFile /usr/local/bin/pacman-check-local-deps.sh 755
 
-sed -i '/^## Ukraine/,/^$/ s/^#//' "$(GetPackageOriginalFile pacman-mirrorlist /etc/pacman.d/mirrorlist)"
+sed -i -f - "$(GetPackageOriginalFile pacman-mirrorlist /etc/pacman.d/mirrorlist)" <<EOF
+4 a
+4 a Server = http://mirrors.nix.org.ua/linux/archlinux/\$repo/os/\$arch
+4 a Server = https://mirrors.nix.org.ua/linux/archlinux/\$repo/os/\$arch
+EOF
 
 sed -i -f - "$(GetPackageOriginalFile pacman /etc/pacman.conf)" <<EOF
 /^#Color/ s/^#//
