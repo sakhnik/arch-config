@@ -126,9 +126,7 @@ AddPackage --foreign bindfs # A FUSE filesystem for mirroring a directory to ano
 AddPackage --foreign binfmt-qemu-static # Register qemu-static interpreters for various binary formats
 AddPackage --foreign cquery # Low-latency vscode language server for large C++ code-bases, powered by libclang.
 AddPackage --foreign dcadec-git # DTS Coherent Acoustics decoder with support for HD extensions
-AddPackage --foreign distccd-alarm-armv7h # A toolchain for Arch ARM armv7h builds via distcc
 AddPackage --foreign doctest # The lightest feature rich C++ single header testing framework
-AddPackage --foreign dpkg # The Debian Package Manager. Don't use it instead of Arch's 'pacman'.
 AddPackage --foreign jmtpfs # mtpfs with better support for Android
 AddPackage --foreign libcatch-cpp-headers # C++-native framework for unit-tests using only a header file
 AddPackage --foreign neovim-git # Fork of Vim aiming to improve user experience, plugins, and GUIs.
@@ -138,7 +136,6 @@ AddPackage --foreign pkgbuild-introspection # Tools for generating .AURINFO file
 AddPackage --foreign python3-kitchen # Useful snippets of python code
 AddPackage --foreign qemu-user-static # A generic and open source processor emulator which achieves a good emulation speed by using dynamic translation, statically linked.
 AddPackage --foreign realvnc-vnc-viewer # VNC remote desktop client software by RealVNC
-AddPackage --foreign rtv # Browse Reddit from your terminal
 AddPackage --foreign tor-browser-en # Tor Browser Bundle
 AddPackage --foreign ttf-opensans # Sans-serif typeface commissioned by Google
 AddPackage --foreign ttf-raleway # An elegant sans-serif font, designed in a single thin weight.

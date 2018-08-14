@@ -51,7 +51,6 @@ nm-openconnect:x:996:
 git:x:995:
 brlapi:x:994:
 kvm:x:78:
-vboxusers:x:108:sakhnik
 wireshark:x:150:sakhnik
 uuidd:x:68:
 dbus:x:81:
