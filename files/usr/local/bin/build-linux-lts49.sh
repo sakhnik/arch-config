@@ -21,4 +21,4 @@ $EDITOR PKGBUILD
 
 nice -n 19 ionice -c 3 makepkg
 
-sudo pacman -U linux-lts49-4*.tar.xz
+sudo pacman -U linux-lts49-4*.tar.xz linux-lts49-headers*.tar.xz

@@ -25,6 +25,7 @@ crc16
 crc32c_generic
 crc32c_intel
 crc32_pclmul
+crc_itu_t
 crct10dif_pclmul
 cryptd
 crypto_simd
@@ -114,6 +115,7 @@ nfsv4
 nls_cp437
 nls_iso8859_1
 pcbc
+pcc_cpufreq
 pinctrl_intel
 pinctrl_sunrisepoint
 processor_thermal_device
@@ -165,6 +167,7 @@ tpm_tis
 tpm_tis_core
 tun
 uas
+udf
 usb_common
 usbcore
 usbhid
