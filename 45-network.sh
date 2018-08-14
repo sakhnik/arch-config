@@ -108,3 +108,4 @@ SetFileProperty /etc/tinc/farm/tinc-farm owner sakhnik
 CreateLink /etc/tinc/farm/hosts/alarmpi3 ../tinc-farm/alarmpi3
 CreateLink /etc/tinc/farm/hosts/kionia ../tinc-farm/kionia
 CreateLink /etc/tinc/farm/hosts/pangea ../tinc-farm/pangea
+CreateLink /etc/systemd/system/tinc.service.wants/tinc@farm.service /usr/lib/systemd/system/tinc@.service
