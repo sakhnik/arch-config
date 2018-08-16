@@ -41,7 +41,7 @@ EOF
 
 CopyFile /usr/local/bin/pacman-check-local-deps.sh 755
 
-cat >"$(CreateFile /etc/pacman.d/hooks/check-linux-lts49.hook)" <<EOF
+cat >"$(CreateFile /etc/pacman.d/hooks/check-updates.hook)" <<EOF
 [Trigger]
 Operation = Upgrade
 Type = Package
