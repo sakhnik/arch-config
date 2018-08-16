@@ -41,6 +41,20 @@ EOF
 
 CopyFile /usr/local/bin/pacman-check-local-deps.sh 755
 
+cat >"$(CreateFile /etc/pacman.d/hooks/check-linux-lts49.hook)" <<EOF
+[Trigger]
+Operation = Upgrade
+Type = Package
+Target = *
+
+[Action]
+Description = Checking for upstream updates...
+When = PostTransaction
+Exec = /usr/local/bin/check-upstream-updates.sh
+EOF
+
+CopyFile /usr/local/bin/check-upstream-updates.sh 755
+
 sed -i -f - "$(GetPackageOriginalFile pacman-mirrorlist /etc/pacman.d/mirrorlist)" <<EOF
 4 a
 4 a Server = http://mirrors.nix.org.ua/linux/archlinux/\$repo/os/\$arch
