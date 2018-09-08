@@ -123,7 +123,7 @@ AddPackage --foreign python-basiciw # Retrieve information such as ESSID or sign
 
 CreateLink /etc/os-release ../usr/lib/os-release
 # Local time zone
-CreateLink /etc/localtime ../usr/share/zoneinfo/Europe/Kiev
+CreateLink /etc/localtime /usr/share/zoneinfo/Europe/Kiev
 
 CreateFile /etc/.pwd.lock 600 > /dev/null
 CopyFile /etc/group
