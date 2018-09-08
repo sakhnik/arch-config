@@ -1,4 +1,5 @@
 AddPackage aisleriot # A collection of patience games written in guile scheme
+AddPackage arandr # Provide a simple visual front end for XRandR 1.2.
 AddPackage arc-gtk-theme # A flat theme with transparent elements for GTK 3, GTK 2 and Gnome-Shell
 AddPackage arc-icon-theme # Arc icon theme. Official releases only.
 AddPackage arch-install-scripts # Scripts to aid in installing Arch Linux
@@ -124,6 +125,8 @@ AddPackage xorg-xinput # Small commandline tool to configure devices
 AddPackage yelp # Get help with GNOME
 AddPackage youtube-dl # A small command-line program to download videos from YouTube.com and a few more sites
 
+AddPackage --foreign alacritty-git # A cross-platform, GPU-accelerated terminal emulator
+AddPackage --foreign alacritty-terminfo-git # Terminfo files for the alacritty terminal emulator
 AddPackage --foreign android-sdk-platform-tools # Platform-Tools for Google Android SDK (adb and fastboot)
 AddPackage --foreign bindfs # A FUSE filesystem for mirroring a directory to another directory, similar to 'mount --bind', with permission settings.
 AddPackage --foreign binfmt-qemu-static # Register qemu-static interpreters for various binary formats
