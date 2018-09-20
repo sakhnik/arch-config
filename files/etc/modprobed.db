@@ -5,8 +5,12 @@ acpi_pad
 acpi_thermal_rel
 aesni_intel
 aes_x86_64
+af_alg
 agpgart
 ahci
+algif_aead
+algif_hash
+algif_skcipher
 arc4
 atkbd
 auth_rpcgss
@@ -17,9 +21,11 @@ btintel
 btrtl
 btusb
 button
+cbc
 ccm
 cfg80211
 cifs
+cmac
 coretemp
 crc16
 crc32c_generic
@@ -30,6 +36,7 @@ crct10dif_pclmul
 cryptd
 crypto_simd
 ctr
+des_generic
 dns_resolver
 drm
 drm_kms_helper
@@ -97,6 +104,7 @@ lrw
 mac80211
 mac_hid
 mbcache
+md4
 media
 mei
 mei_me
@@ -143,6 +151,7 @@ snd_hwdep
 snd_pcm
 snd_pcm_dmaengine
 snd_rawmidi
+snd_seq
 snd_seq_device
 snd_soc_acpi
 snd_soc_core
