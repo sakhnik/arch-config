@@ -1,6 +1,8 @@
+AddPackage iwd # Internet Wireless Daemon
 AddPackage nfs-utils # Support programs for Network File Systems
 AddPackage tinc # VPN (Virtual Private Network) daemon
 
+CreateLink /etc/systemd/system/multi-user.target.wants/iwd.service /usr/lib/systemd/system/iwd.service
 CreateLink /etc/systemd/system/multi-user.target.wants/tinc.service /usr/lib/systemd/system/tinc.service
 
 ###########################################################
