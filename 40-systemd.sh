@@ -100,7 +100,7 @@ CreateLink /etc/systemd/user/sockets.target.wants/pulseaudio.socket /usr/lib/sys
 # with it in Xiaomi Mi Notebook Air 12
 cat >"$(CreateFile /boot/loader/loader.conf)" <<EOF
 #timeout 3
-default arch-lts49
+default arch
 EOF
 
 cat >"$(CreateFile /boot/loader/entries/arch-lts.conf)" <<EOF
