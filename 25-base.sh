@@ -111,7 +111,6 @@ AddPackage vi # The original ex/vi text editor
 AddPackage wget # Network utility to retrieve files from the Web
 AddPackage which # A utility to show the full path of commands
 AddPackage whois # Intelligent WHOIS client
-AddPackage wpa_supplicant # A utility providing key negotiation for WPA wireless networks
 AddPackage xfsprogs # XFS filesystem utilities
 AddPackage yajl # Yet Another JSON Library
 AddPackage yasm # A rewrite of NASM to allow for multiple syntax supported (NASM, TASM, GAS, etc.)
@@ -147,8 +146,6 @@ EOF
 
 sed -i -f -  "$(GetPackageOriginalFile sudo /etc/sudoers)" <<EOF
 s/^#\( %wheel ALL=(ALL) ALL\)$/\1/
-/^# %wheel ALL=(ALL) NOPASSWD: ALL/ a \
-\ %wheel ALL=(ALL) NOPASSWD: /usr/bin/wpa_gui
 EOF
 
 

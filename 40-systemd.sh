@@ -77,7 +77,6 @@ CreateLink /etc/systemd/system/getty.target.wants/getty@tty1.service /usr/lib/sy
 CreateLink /etc/systemd/system/multi-user.target.wants/remote-fs.target /usr/lib/systemd/system/remote-fs.target
 CreateLink /etc/systemd/system/multi-user.target.wants/systemd-networkd.service /usr/lib/systemd/system/systemd-networkd.service
 CreateLink /etc/systemd/system/multi-user.target.wants/systemd-resolved.service /usr/lib/systemd/system/systemd-resolved.service
-CreateLink /etc/systemd/system/multi-user.target.wants/wpa_supplicant@wlp1s0.service /usr/lib/systemd/system/wpa_supplicant@.service
 CreateLink /etc/systemd/system/network-online.target.wants/systemd-networkd-wait-online.service /usr/lib/systemd/system/systemd-networkd-wait-online.service
 CreateLink /etc/systemd/system/sleep.target.wants/root-suspend.service /etc/systemd/system/root-suspend.service
 CreateLink /etc/systemd/system/sockets.target.wants/avahi-daemon.socket /usr/lib/systemd/system/avahi-daemon.socket

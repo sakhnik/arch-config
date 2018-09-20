@@ -146,7 +146,6 @@ AddPackage --foreign tor-browser-en # Tor Browser Bundle
 AddPackage --foreign ttf-opensans # Sans-serif typeface commissioned by Google
 AddPackage --foreign ttf-raleway # An elegant sans-serif font, designed in a single thin weight.
 AddPackage --foreign universal-ctags-git # Multilanguage reimplementation of the Unix ctags utility
-AddPackage --foreign wpa_supplicant_gui # A Qt frontend to wpa_supplicant
 
 
 cat >"$(CreateFile /etc/mpv/mpv.conf)" <<EOF
