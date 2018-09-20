@@ -57,7 +57,6 @@ CopyFile /usr/local/bin/check-upstream-updates.sh 755
 
 sed -i -f - "$(GetPackageOriginalFile pacman-mirrorlist /etc/pacman.d/mirrorlist)" <<EOF
 4 a
-4 a Server = https://mirror.i3d.net/pub/archlinux/\$repo/os/\$arch
 4 a Server = http://mirrors.nix.org.ua/linux/archlinux/\$repo/os/\$arch
 4 a Server = https://mirrors.nix.org.ua/linux/archlinux/\$repo/os/\$arch
 EOF
