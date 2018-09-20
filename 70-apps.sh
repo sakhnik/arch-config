@@ -133,7 +133,6 @@ AddPackage --foreign binfmt-qemu-static # Register qemu-static interpreters for 
 AddPackage --foreign cquery # Low-latency vscode language server for large C++ code-bases, powered by libclang.
 AddPackage --foreign dcadec-git # DTS Coherent Acoustics decoder with support for HD extensions
 AddPackage --foreign doctest # The lightest feature rich C++ single header testing framework
-AddPackage --foreign jmtpfs # mtpfs with better support for Android
 AddPackage --foreign libcatch-cpp-headers # C++-native framework for unit-tests using only a header file
 AddPackage --foreign neovim-git # Fork of Vim aiming to improve user experience, plugins, and GUIs.
 AddPackage --foreign pamtester # Tiny program to test the pluggable authentication modules (PAM) facility
