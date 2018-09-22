@@ -2,6 +2,34 @@ AddPackage iwd # Internet Wireless Daemon
 AddPackage nfs-utils # Support programs for Network File Systems
 AddPackage tinc # VPN (Virtual Private Network) daemon
 
+
+cat >"$(CreateFile /etc/systemd/network/25-wireless.network)" <<EOF
+[Match]
+Name=wifi
+
+[Network]
+DHCP=yes
+EOF
+
+cat >"$(CreateFile /etc/udev/rules.d/10-network.rules)" <<EOF
+SUBSYSTEM=="net", ACTION=="add", ATTR{address}=="00:c2:c6:ea:83:91", NAME="wifi"
+EOF
+
+# Avoid race, iwd should start after the interface renamed.
+# Otherwise, the interface couldn't be renamed because "busy".
+cat >"$(CreateFile /etc/systemd/system/iwd.service.d/override.conf)" <<EOF
+[Unit]
+BindsTo=sys-subsystem-net-devices-wifi.device
+After=sys-subsystem-net-devices-wifi.device
+EOF
+
+CreateLink /etc/systemd/system/dbus-org.freedesktop.network1.service /usr/lib/systemd/system/systemd-networkd.service
+CreateLink /etc/systemd/system/dbus-org.freedesktop.resolve1.service /usr/lib/systemd/system/systemd-resolved.service
+CreateLink /etc/systemd/system/multi-user.target.wants/systemd-networkd.service /usr/lib/systemd/system/systemd-networkd.service
+CreateLink /etc/systemd/system/multi-user.target.wants/systemd-resolved.service /usr/lib/systemd/system/systemd-resolved.service
+CreateLink /etc/systemd/system/network-online.target.wants/systemd-networkd-wait-online.service /usr/lib/systemd/system/systemd-networkd-wait-online.service
+CreateLink /etc/systemd/system/sockets.target.wants/systemd-networkd.socket /usr/lib/systemd/system/systemd-networkd.socket
+
 CreateLink /etc/systemd/system/multi-user.target.wants/iwd.service /usr/lib/systemd/system/iwd.service
 CreateLink /etc/systemd/system/multi-user.target.wants/tinc.service /usr/lib/systemd/system/tinc.service
 

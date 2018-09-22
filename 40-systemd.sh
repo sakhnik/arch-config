@@ -12,14 +12,6 @@ cat >"$(CreateFile /etc/systemd/journald.conf.d/00-journal-size.conf)" <<EOF
 SystemMaxUse=50M
 EOF
 
-cat >"$(CreateFile /etc/systemd/network/25-wireless.network)" <<EOF
-[Match]
-Name=wlp1s0
-
-[Network]
-DHCP=ipv4
-EOF
-
 cat >"$(CreateFile /etc/systemd/system/root-suspend.service)" <<EOF
 [Unit]
 Description=Local system suspend actions
@@ -70,19 +62,13 @@ CreateLink /etc/systemd/system/sleep.target.wants/i3lock@sakhnik.service /etc/sy
 
 CreateLink /etc/resolv.conf /run/systemd/resolve/resolv.conf
 SetFileProperty /etc/resolv.conf mode 777
-CreateLink /etc/systemd/system/dbus-org.freedesktop.network1.service /usr/lib/systemd/system/systemd-networkd.service
-CreateLink /etc/systemd/system/dbus-org.freedesktop.resolve1.service /usr/lib/systemd/system/systemd-resolved.service
 CreateLink /etc/systemd/system/display-manager.service /usr/lib/systemd/system/lightdm.service
 CreateLink /etc/systemd/system/getty.target.wants/getty@tty1.service /usr/lib/systemd/system/getty@.service
 CreateLink /etc/systemd/system/multi-user.target.wants/remote-fs.target /usr/lib/systemd/system/remote-fs.target
-CreateLink /etc/systemd/system/multi-user.target.wants/systemd-networkd.service /usr/lib/systemd/system/systemd-networkd.service
-CreateLink /etc/systemd/system/multi-user.target.wants/systemd-resolved.service /usr/lib/systemd/system/systemd-resolved.service
-CreateLink /etc/systemd/system/network-online.target.wants/systemd-networkd-wait-online.service /usr/lib/systemd/system/systemd-networkd-wait-online.service
 CreateLink /etc/systemd/system/sleep.target.wants/root-suspend.service /etc/systemd/system/root-suspend.service
 CreateLink /etc/systemd/system/sockets.target.wants/avahi-daemon.socket /usr/lib/systemd/system/avahi-daemon.socket
 CreateLink /etc/systemd/system/sockets.target.wants/org.cups.cupsd.socket /usr/lib/systemd/system/org.cups.cupsd.socket
 CreateLink /etc/systemd/system/sockets.target.wants/sshd.socket /usr/lib/systemd/system/sshd.socket
-CreateLink /etc/systemd/system/sockets.target.wants/systemd-networkd.socket /usr/lib/systemd/system/systemd-networkd.socket
 CreateLink /etc/systemd/system/suspend.target.wants/root-resume.service /etc/systemd/system/root-resume.service
 CreateLink /etc/systemd/system/sysinit.target.wants/systemd-timesyncd.service /usr/lib/systemd/system/systemd-timesyncd.service
 CreateLink /etc/systemd/user/default.target.wants/xdg-user-dirs-update.service /usr/lib/systemd/user/xdg-user-dirs-update.service
