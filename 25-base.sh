@@ -167,6 +167,8 @@ cat >>"$(GetPackageOriginalFile filesystem /etc/hosts)" <<EOF
 176.122.93.103  home
 
 10.0.0.3   guard
+10.0.1.1   home-alarmpi3
+10.0.1.6   home-door
 10.0.2.2   farm-pangea
 10.0.2.4   farm-ustia
 EOF

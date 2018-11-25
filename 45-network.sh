@@ -108,10 +108,12 @@ CopyFile /etc/tinc/home/hosts-git/kionia '' sakhnik users
 CopyFile /etc/tinc/home/hosts-git/land '' sakhnik users
 CopyFile /etc/tinc/home/hosts-git/potter '' sakhnik users
 CopyFile /etc/tinc/home/hosts-git/potter2 '' sakhnik users
+CopyFile /etc/tinc/home/hosts-git/door 600 sakhnik users
 SetFileProperty /etc/tinc/home/hosts-git group users
 SetFileProperty /etc/tinc/home/hosts-git owner sakhnik
 CreateLink /etc/tinc/home/hosts/alarmpi3 ../hosts-git/alarmpi3
 CreateLink /etc/tinc/home/hosts/kionia ../hosts-git/kionia
+CreateLink /etc/tinc/home/hosts/door ../hosts-git/door
 
 
 ###########################################################
