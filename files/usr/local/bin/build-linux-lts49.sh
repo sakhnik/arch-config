@@ -7,7 +7,7 @@ echo "Building 4.9.$version"
 
 cd /tmp
 [[ -d linux-lts49 ]] && rm -rf linux-lts49
-auracle download linux-lts49
+cower -d linux-lts49
 cd linux-lts49
 sed -i -f - PKGBUILD <<END
 /^pkgver=/ s/4\.9\.[0-9]\+/4.9.$version/

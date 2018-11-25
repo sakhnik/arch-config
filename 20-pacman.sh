@@ -2,6 +2,7 @@ AddPackage pacman # A library-based package manager with dependency support
 AddPackage pacman-contrib # Contributed scripts and tools for pacman systems
 AddPackage pacutils # Helper tools for libalpm
 AddPackage --foreign auracle-git # A flexible client for the AUR
+AddPackage --foreign nlohmann-json # Header-only JSON library for Modern C++
 
 cat >"$(CreateFile /etc/pacman.d/hooks/paccache-remove.hook)" <<EOF
 [Trigger]
