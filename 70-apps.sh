@@ -146,6 +146,7 @@ AddPackage --foreign cquery # Low-latency vscode language server for large C++ c
 AddPackage --foreign dcadec-git # DTS Coherent Acoustics decoder with support for HD extensions
 AddPackage --foreign doctest # The lightest feature rich C++ single header testing framework
 AddPackage --foreign libcatch-cpp-headers # C++-native framework for unit-tests using only a header file
+AddPackage --foreign mimeo # Open files by MIME-type or file name using regular expressions.
 AddPackage --foreign neovim-git # Fork of Vim aiming to improve user experience, plugins, and GUIs.
 AddPackage --foreign pamtester # Tiny program to test the pluggable authentication modules (PAM) facility
 AddPackage --foreign peerflix # Streaming torrent client for node.js
@@ -158,6 +159,8 @@ AddPackage --foreign tor-browser-en # Tor Browser Bundle
 AddPackage --foreign ttf-opensans # Sans-serif typeface commissioned by Google
 AddPackage --foreign ttf-raleway # An elegant sans-serif font, designed in a single thin weight.
 AddPackage --foreign universal-ctags-git # Multilanguage reimplementation of the Unix ctags utility
+AddPackage --foreign xdg-utils-mimeo # Command line tools that assist applications with a variety of desktop integration tasks; patched to use mimeo
+
 
 
 cat >"$(CreateFile /etc/mpv/mpv.conf)" <<EOF
