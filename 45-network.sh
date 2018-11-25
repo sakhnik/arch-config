@@ -11,6 +11,14 @@ Name=wifi
 DHCP=yes
 EOF
 
+cat >"$(CreateFile /etc/systemd/network/20-enp.network)" <<EOF
+[Match]
+Name=enp*
+
+[Network]
+DHCP=yes
+EOF
+
 cat >"$(CreateFile /etc/udev/rules.d/10-network.rules)" <<EOF
 SUBSYSTEM=="net", ACTION=="add", ATTR{address}=="00:c2:c6:ea:83:91", NAME="wifi"
 EOF
