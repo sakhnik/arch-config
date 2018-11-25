@@ -142,9 +142,11 @@ SetFileProperty /etc/tinc/farm/rsa_key.priv mode 600
 CopyFile /etc/tinc/farm/tinc-farm/alarmpi3 '' sakhnik users
 CopyFile /etc/tinc/farm/tinc-farm/kionia '' sakhnik users
 CopyFile /etc/tinc/farm/tinc-farm/pangea '' sakhnik users
+CopyFile /etc/tinc/farm/tinc-farm/ustia '' sakhnik users
 SetFileProperty /etc/tinc/farm/tinc-farm group users
 SetFileProperty /etc/tinc/farm/tinc-farm owner sakhnik
 CreateLink /etc/tinc/farm/hosts/alarmpi3 ../tinc-farm/alarmpi3
 CreateLink /etc/tinc/farm/hosts/kionia ../tinc-farm/kionia
 CreateLink /etc/tinc/farm/hosts/pangea ../tinc-farm/pangea
+CreateLink /etc/tinc/farm/hosts/ustia ../tinc-farm/ustia
 CreateLink /etc/systemd/system/tinc.service.wants/tinc@farm.service /usr/lib/systemd/system/tinc@.service

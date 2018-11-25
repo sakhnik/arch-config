@@ -168,6 +168,7 @@ cat >>"$(GetPackageOriginalFile filesystem /etc/hosts)" <<EOF
 
 10.0.0.3   guard
 10.0.2.2   farm-pangea
+10.0.2.4   farm-ustia
 EOF
 
 cat >"$(CreateFile /etc/hostname)" <<EOF
