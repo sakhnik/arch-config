@@ -1,6 +1,6 @@
-AddPackage iwd # Internet Wireless Daemon
 AddPackage nfs-utils # Support programs for Network File Systems
 AddPackage tinc # VPN (Virtual Private Network) daemon
+AddPackage --foreign iwd-git # Internet Wireless Daemon
 
 
 cat >"$(CreateFile /etc/systemd/network/25-wireless.network)" <<EOF

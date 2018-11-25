@@ -1,19 +1,25 @@
 AddPackage aisleriot # A collection of patience games written in guile scheme
+AddPackage alacritty # A cross-platform, GPU-accelerated terminal emulator
+AddPackage alacritty-terminfo # Terminfo files for the alacritty terminal emulator
 AddPackage arandr # Provide a simple visual front end for XRandR 1.2.
 AddPackage arc-gtk-theme # A flat theme with transparent elements for GTK 3, GTK 2 and Gnome-Shell
 AddPackage arc-icon-theme # Arc icon theme. Official releases only.
 AddPackage arch-install-scripts # Scripts to aid in installing Arch Linux
 AddPackage asciinema # Record and share terminal sessions
+AddPackage arm-none-eabi-gcc # The GNU Compiler Collection - cross compiler for ARM EABI (bare-metal) target
 AddPackage asp # Arch Linux build source file management tool
 AddPackage atomix # Build molecules out of single atoms
 AddPackage atool # A script for managing file archives of various types
 AddPackage baobab # A graphical directory tree analyzer
 AddPackage chromium # A web browser built for speed, simplicity, and security
 AddPackage cups # The CUPS Printing System - daemon package
+AddPackage cura # A software solution for 3D printing aimed at RepRaps and the Ultimaker.
 AddPackage dante # SOCKS v4 and v5 compatible proxy server and client
 AddPackage dconf-editor # dconf Editor
 AddPackage debootstrap # Bootstrap a basic Debian system
+AddPackage delve # A debugger for the Go programming language.
 AddPackage devhelp # API documentation browser for GNOME
+AddPackage dtc # Device Tree Compiler
 AddPackage encfs # Encrypted filesystem in user-space
 AddPackage eog # Eye of Gnome
 AddPackage evince # Document viewer (PDF, Postscript, djvu, tiff, dvi, XPS, SyncTex support with gedit, comics books (cbr,cbz,cb7 and cbt))
@@ -52,12 +58,14 @@ AddPackage gucharmap # Gnome Unicode Charmap
 AddPackage gvim # Vi Improved, a highly configurable, improved version of the vi text editor (with advanced features, such as a GUI)
 AddPackage highlight # Fast and flexible source code highlighter (CLI version)
 AddPackage iagno # Dominate the board in a classic version of Reversi
+AddPackage inkscape # Professional vector graphics editor
 AddPackage josm # An editor for OpenStreetMap written in Java
 AddPackage ledger # Double-entry accounting system with a command-line reporting interface
-AddPackage libreoffice-fresh # LibreOffice branch which contains new features and program enhancements
-AddPackage libreoffice-fresh-uk # Ukrainian language pack for LibreOffice Fresh
+AddPackage libreoffice-still # LibreOffice maintenance branch
+AddPackage libreoffice-still-uk # Ukrainian language pack for LibreOffice still
 AddPackage libvncserver # Cross-platform C libraries that allow you to easily implement VNC server or client functionality
 AddPackage lldb # Next generation, high-performance debugger
+AddPackage luarocks5.1 # Deployment and management system for Lua 5.1 modules
 AddPackage lynx # A text browser for the World Wide Web
 AddPackage make # GNU make utility to maintain groups of programs
 AddPackage man-db # A utility for reading man pages
@@ -71,11 +79,14 @@ AddPackage mousetweaks # Mouse accessibility enhancements
 AddPackage mpv # a free, open source, and cross-platform media player
 AddPackage netbeans # IDE for Java, HTML5, PHP, Groovy, C and C++
 AddPackage nethack # A single player dungeon exploration game
+AddPackage networkmanager # Network connection manager and user applications
 AddPackage nginx-mainline # Lightweight HTTP server and IMAP/POP3 proxy server, mainline release
+AddPackage nmap # Utility for network discovery and security auditing
 AddPackage notification-daemon # Notification daemon for the desktop notifications framework
 AddPackage odt2txt # extracts the text out of OpenDocument Texts
 AddPackage opendesktop-fonts # Chinese TrueType Fonts
 AddPackage openjpeg # An open source JPEG 2000 codec
+AddPackage openscad # The programmers solid 3D CAD modeller
 AddPackage pass # Stores, retrieves, generates, and synchronizes passwords securely
 AddPackage pavucontrol # PulseAudio Volume Control
 AddPackage pcmanfm # Extremely fast and lightweight file manager
@@ -103,6 +114,7 @@ AddPackage sshuttle # Transparent proxy server that forwards all TCP packets ove
 AddPackage stellarium # A stellarium with great graphics and a nice database of sky-objects
 AddPackage stow # Manage installation of multiple softwares in the same directory tree
 AddPackage strace # A diagnostic, debugging and instructional userspace tracer
+AddPackage swig # Generate scripting interfaces to C/C++ code
 AddPackage texlive-langcyrillic # TeX Live - Fonts and macro packages to typeset Cyrillic texts
 AddPackage texlive-latexextra # TeX Live - Large collection of add-on packages for LaTeX
 AddPackage transmission-cli # Fast, easy, and free BitTorrent client (CLI tools, daemon and web client)
@@ -112,11 +124,13 @@ AddPackage ttf-droid # General-purpose fonts released by Google as part of Andro
 AddPackage ttf-freefont # Set of free outline fonts covering the Unicode character set
 AddPackage ttf-liberation # Red Hats Liberation fonts.
 AddPackage ttf-linux-libertine # Serif (Libertine) and Sans Serif (Biolinum) OpenType fonts with large Unicode coverage
+AddPackage uboot-tools # U-Boot bootloader utility tools
 AddPackage udiskie # Removable disk automounter using udisks
 AddPackage vino # A VNC server for the GNOME desktop
 AddPackage vlc # Multi-platform MPEG, VCD/DVD, and DivX player
 AddPackage w3m # Text-based Web browser as well as pager
 AddPackage wireshark-gtk # a free network protocol analyzer for Unix/Linux and Windows - GTK frontend
+AddPackage wpa_supplicant # A utility providing key negotiation for WPA wireless networks
 AddPackage wvdial # A dialer program to connect to the Internet
 AddPackage xdg-user-dirs-gtk # Creates user dirs and asks to relocalize them
 AddPackage xdotool # Command-line X11 automation tool
@@ -125,8 +139,6 @@ AddPackage xorg-xinput # Small commandline tool to configure devices
 AddPackage yelp # Get help with GNOME
 AddPackage youtube-dl # A small command-line program to download videos from YouTube.com and a few more sites
 
-AddPackage --foreign alacritty-git # A cross-platform, GPU-accelerated terminal emulator
-AddPackage --foreign alacritty-terminfo-git # Terminfo files for the alacritty terminal emulator
 AddPackage --foreign android-sdk-platform-tools # Platform-Tools for Google Android SDK (adb and fastboot)
 AddPackage --foreign bindfs # A FUSE filesystem for mirroring a directory to another directory, similar to 'mount --bind', with permission settings.
 AddPackage --foreign binfmt-qemu-static # Register qemu-static interpreters for various binary formats
@@ -141,6 +153,7 @@ AddPackage --foreign pkgbuild-introspection # Tools for generating .AURINFO file
 AddPackage --foreign python3-kitchen # Useful snippets of python code
 AddPackage --foreign qemu-user-static # A generic and open source processor emulator which achieves a good emulation speed by using dynamic translation, statically linked.
 AddPackage --foreign realvnc-vnc-viewer # VNC remote desktop client software by RealVNC
+AddPackage --foreign teamviewer # All-In-One Software for Remote Support and Online Meetings
 AddPackage --foreign tor-browser-en # Tor Browser Bundle
 AddPackage --foreign ttf-opensans # Sans-serif typeface commissioned by Google
 AddPackage --foreign ttf-raleway # An elegant sans-serif font, designed in a single thin weight.
