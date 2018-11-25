@@ -1,7 +1,7 @@
 AddPackage pacman # A library-based package manager with dependency support
 AddPackage pacman-contrib # Contributed scripts and tools for pacman systems
 AddPackage pacutils # Helper tools for libalpm
-AddPackage --foreign cower # A simple AUR agent with a pretentious name
+AddPackage --foreign auracle-git # A flexible client for the AUR
 
 cat >"$(CreateFile /etc/pacman.d/hooks/paccache-remove.hook)" <<EOF
 [Trigger]
