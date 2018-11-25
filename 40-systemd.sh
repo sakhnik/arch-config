@@ -2,8 +2,6 @@ AddPackage linux # The Linux kernel and modules
 AddPackage linux-lts # The Linux-lts kernel and modules
 AddPackage systemd-sysvcompat # sysvinit compat for systemd
 
-AddPackage --foreign linux-lts49 # The Linux-lts49 kernel and modules
-AddPackage --foreign linux-lts49-headers # Header files and scripts for building modules for Linux-lts49 kernel
 AddPackage --foreign systemd-boot-pacman-hook # Pacman hook to upgrade systemd-boot after systemd upgrade.
 
 
