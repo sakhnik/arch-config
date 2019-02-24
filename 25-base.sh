@@ -30,7 +30,6 @@ AddPackage gdb # The GNU Debugger
 AddPackage gettext # GNU internationalization library
 AddPackage git # the fast distributed version control system
 AddPackage glibc # GNU C Library
-AddPackage go # Core compiler tools for the Go programming language
 AddPackage grep # A string search utility
 AddPackage gzip # GNU compression utility
 AddPackage hdparm # A shell utility for manipulating Linux IDE drive/driver parameters

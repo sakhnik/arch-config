@@ -12,6 +12,7 @@ AddPackage atomix # Build molecules out of single atoms
 AddPackage atool # A script for managing file archives of various types
 AddPackage baobab # A graphical directory tree analyzer
 AddPackage chromium # A web browser built for speed, simplicity, and security
+AddPackage composer # Dependency Manager for PHP
 AddPackage cups # The CUPS Printing System - daemon package
 AddPackage cura # A software solution for 3D printing aimed at RepRaps and the Ultimaker.
 AddPackage dante # SOCKS v4 and v5 compatible proxy server and client
@@ -27,7 +28,9 @@ AddPackage ffmpegthumbnailer # Lightweight video thumbnailer that can be used by
 AddPackage figlet # A program for making large letters out of ordinary text
 AddPackage file-roller # Create and modify archives
 AddPackage firefox # Standalone web browser from mozilla.org
+AddPackage firefox-i18n-uk # Ukrainian language pack for Firefox
 AddPackage five-or-more # Remove colored balls from the board by forming lines
+AddPackage flashrom # Utility for reading, writing, erasing and verifying flash ROM chips
 AddPackage foomatic-db # Foomatic - The collected knowledge about printers, drivers, and driver options in XML files, used by foomatic-db-engine to generate PPD files.
 AddPackage foomatic-db-ppds # Foomatic - PPDs from printer manufacturers
 AddPackage fortune-mod # The Fortune Cookie Program from BSD games
@@ -65,11 +68,11 @@ AddPackage libreoffice-still # LibreOffice maintenance branch
 AddPackage libreoffice-still-uk # Ukrainian language pack for LibreOffice still
 AddPackage libvncserver # Cross-platform C libraries that allow you to easily implement VNC server or client functionality
 AddPackage lldb # Next generation, high-performance debugger
-AddPackage luarocks5.1 # Deployment and management system for Lua 5.1 modules
 AddPackage lynx # A text browser for the World Wide Web
 AddPackage make # GNU make utility to maintain groups of programs
 AddPackage man-db # A utility for reading man pages
 AddPackage man-pages # Linux man pages
+AddPackage mariadb # Fast SQL database server, derived from MySQL
 AddPackage mc # Midnight Commander is a text based filemanager/shell that emulates Norton Commander
 AddPackage mediainfo # supplies technical and tag information about a video or audio file
 AddPackage mercurial # A scalable distributed SCM tool
@@ -91,20 +94,23 @@ AddPackage pass # Stores, retrieves, generates, and synchronizes passwords secur
 AddPackage pavucontrol # PulseAudio Volume Control
 AddPackage pcmanfm # Extremely fast and lightweight file manager
 AddPackage pcsclite # PC/SC Architecture smartcard middleware library
+AddPackage php # A general-purpose scripting language that is especially suited to web development
+AddPackage php-fpm # FastCGI Process Manager for PHP
 AddPackage progress # Shows running coreutils basic commands and displays stats
 AddPackage pulseaudio # A featureful, general-purpose sound server
 AddPackage pulseaudio-alsa # ALSA Configuration for PulseAudio
 AddPackage python-chardet # Python3 module for character encoding auto-detection
 AddPackage python-evdev # Python bindings for the Linux input subsystem
 AddPackage python-neovim # Python 3 client for neovim
+AddPackage python-pytest # Simple powerful testing with Python
 AddPackage python-pyudev # A pure Python 3.x binding to libudev
-AddPackage python2-neovim # Python 2 client for neovim
 AddPackage qiv # Quick Image Viewer (qiv) is a very small and fast GDK/Imlib image viewer
 AddPackage qrencode # C library for encoding data in a QR Code symbol.
 AddPackage qt4 # A cross-platform application and UI framework
 AddPackage qtcreator # Lightweight, cross-platform integrated development environment
 AddPackage remmina # remote desktop client written in GTK+
 AddPackage samba # SMB Fileserver and AD Domain server
+AddPackage scdoc # Tool for generating roff manual pages
 AddPackage schroedinger # An implemenation of the Dirac video codec in ANSI C code
 AddPackage seahorse # GNOME application for managing PGP keys.
 AddPackage shotwell # A digital photo organizer designed for the GNOME desktop environment
@@ -124,6 +130,7 @@ AddPackage ttf-droid # General-purpose fonts released by Google as part of Andro
 AddPackage ttf-freefont # Set of free outline fonts covering the Unicode character set
 AddPackage ttf-liberation # Red Hats Liberation fonts.
 AddPackage ttf-linux-libertine # Serif (Libertine) and Sans Serif (Biolinum) OpenType fonts with large Unicode coverage
+AddPackage ttf-opensans # Sans-serif typeface commissioned by Google
 AddPackage uboot-tools # U-Boot bootloader utility tools
 AddPackage udiskie # Removable disk automounter using udisks
 AddPackage vino # A VNC server for the GNOME desktop
@@ -132,6 +139,8 @@ AddPackage w3m # Text-based Web browser as well as pager
 AddPackage wireshark-gtk # a free network protocol analyzer for Unix/Linux and Windows - GTK frontend
 AddPackage wpa_supplicant # A utility providing key negotiation for WPA wireless networks
 AddPackage wvdial # A dialer program to connect to the Internet
+AddPackage x2goclient # a graphical client (Qt4) for the X2Go system
+AddPackage xcb-util-errors # XCB errors library
 AddPackage xdg-user-dirs-gtk # Creates user dirs and asks to relocalize them
 AddPackage xdotool # Command-line X11 automation tool
 AddPackage xf86-input-synaptics # Synaptics driver for notebook touchpads
