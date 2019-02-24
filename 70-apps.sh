@@ -171,3 +171,9 @@ vo=gpu
 EOF
 
 CopyFile /etc/minirc.dfl
+
+sed -i -f - "$(GetPackageOriginalFile php /etc/php/php.ini)" <<EOF
+s|^;extension=mysqli|extension=mysqli|
+s|^;extension=pdo_mysql|extension=pdo_mysql|
+s|^;date.timezone =|date.timezone = Europe/Kiev|
+EOF
