@@ -144,7 +144,6 @@ AddPackage youtube-dl # A small command-line program to download videos from You
 
 AddPackage --foreign android-sdk-platform-tools # Platform-Tools for Google Android SDK (adb and fastboot)
 AddPackage --foreign bindfs # A FUSE filesystem for mirroring a directory to another directory, similar to 'mount --bind', with permission settings.
-AddPackage --foreign binfmt-qemu-static # Register qemu-static interpreters for various binary formats
 AddPackage --foreign cquery # Low-latency vscode language server for large C++ code-bases, powered by libclang.
 AddPackage --foreign dcadec-git # DTS Coherent Acoustics decoder with support for HD extensions
 AddPackage --foreign doctest # The lightest feature rich C++ single header testing framework
@@ -155,7 +154,6 @@ AddPackage --foreign pamtester # Tiny program to test the pluggable authenticati
 AddPackage --foreign peerflix # Streaming torrent client for node.js
 AddPackage --foreign pkgbuild-introspection # Tools for generating .AURINFO files and PKGBUILD data extraction
 AddPackage --foreign python3-kitchen # Useful snippets of python code
-AddPackage --foreign qemu-user-static # A generic and open source processor emulator which achieves a good emulation speed by using dynamic translation, statically linked.
 AddPackage --foreign realvnc-vnc-viewer # VNC remote desktop client software by RealVNC
 AddPackage --foreign teamviewer # All-In-One Software for Remote Support and Online Meetings
 AddPackage --foreign tor-browser-en # Tor Browser Bundle
