@@ -2,6 +2,7 @@ AddPackage linux # The Linux kernel and modules
 AddPackage linux-lts # The Linux-lts kernel and modules
 AddPackage systemd-sysvcompat # sysvinit compat for systemd
 
+AddPackage --foreign earlyoom # Early OOM Daemon for Linux
 AddPackage --foreign systemd-boot-pacman-hook # Pacman hook to upgrade systemd-boot after systemd upgrade.
 
 
@@ -60,6 +61,7 @@ CreateLink /etc/systemd/system/sleep.target.wants/i3lock@sakhnik.service /etc/sy
 
 CreateLink /etc/systemd/system/display-manager.service /usr/lib/systemd/system/lightdm.service
 CreateLink /etc/systemd/system/getty.target.wants/getty@tty1.service /usr/lib/systemd/system/getty@.service
+CreateLink /etc/systemd/system/multi-user.target.wants/earlyoom.service /etc/systemd/system/earlyoom.service
 CreateLink /etc/systemd/system/multi-user.target.wants/remote-fs.target /usr/lib/systemd/system/remote-fs.target
 CreateLink /etc/systemd/system/sleep.target.wants/root-suspend.service /etc/systemd/system/root-suspend.service
 CreateLink /etc/systemd/system/sockets.target.wants/avahi-daemon.socket /usr/lib/systemd/system/avahi-daemon.socket
