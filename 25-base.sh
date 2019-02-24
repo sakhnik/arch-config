@@ -16,7 +16,6 @@ AddPackage diffutils # Utility programs used for creating patch files
 AddPackage distcc # Distributed C, C++ and Objective-C compiler
 AddPackage dosfstools # DOS filesystem utilities
 AddPackage e2fsprogs # Ext2/3/4 filesystem utilities
-AddPackage easy-rsa # Simple shell based CA utility
 AddPackage ethtool # Utility for controlling network drivers and hardware
 AddPackage exfat-utils # Utilities for exFAT file system
 AddPackage expect # A tool for automating interactive applications
