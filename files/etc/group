@@ -64,3 +64,5 @@ render:x:992:
 adbusers:x:991:
 cups:x:209:
 rpc:x:32:
+mysql:x:990:
+geoclue:x:989:

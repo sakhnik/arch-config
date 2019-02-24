@@ -25,6 +25,7 @@ button
 cbc
 ccm
 cdc_ether
+cdrom
 cfg80211
 cifs
 cmac
@@ -42,9 +43,11 @@ des_generic
 dns_resolver
 drm
 drm_kms_helper
+ecb
 ecdh_generic
 evdev
 ext4
+f2fs
 fan
 fat
 fb_sys_fops
@@ -52,6 +55,7 @@ fjes
 fscache
 fscrypto
 fuse
+garp
 gf128mul
 ghash_clmulni_intel
 glue_helper
@@ -101,6 +105,7 @@ libahci
 libata
 libcrc32c
 libps2
+llc
 lockd
 loop
 lrw
@@ -128,6 +133,7 @@ nfsv3
 nfsv4
 nls_cp437
 nls_iso8859_1
+option
 pcbc
 pcc_cpufreq
 pinctrl_intel
@@ -164,6 +170,7 @@ snd_seq_dummy
 snd_soc_acpi
 snd_soc_acpi_intel_match
 snd_soc_core
+snd_soc_hdac_hda
 snd_soc_skl
 snd_soc_skl_ipc
 snd_soc_sst_dsp
@@ -174,6 +181,8 @@ snd_usb_audio
 snd_usbmidi_lib
 soundcore
 sparse_keymap
+sr_mod
+stp
 sunrpc
 syscopyarea
 sysfillrect
@@ -191,6 +200,7 @@ usbcore
 usbhid
 usbnet
 usb_storage
+usb_wwan
 uvcvideo
 veth
 vfat
