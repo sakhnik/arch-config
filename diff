@@ -3,5 +3,12 @@
 # Compare the output of configuration scripts with the actual files
 
 file=${1#files}
+rpath=${file/\//}
 
-diff aconfmgr/tmp/output/files$file $file
+export LANG=C
+
+pkg=$(pacman -Qo $file | sed -E 's|.* is owned by ([^ ]+) ([^ ]+)$|\1-\2|')
+
+tar -xf /var/cache/pacman/pkg/$pkg*.tar.xz $rpath
+
+diff $rpath $file
