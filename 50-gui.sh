@@ -100,4 +100,4 @@ sed -i -f - "$(GetPackageOriginalFile lightdm /etc/lightdm/lightdm.conf)" <<EOF
 s/#greeter-session=.*/greeter-session=lightdm-gtk-greeter/
 EOF
 
-CreateLink /etc/fonts/conf.d/10-no-sub-pixel.conf ../conf.avail/10-no-sub-pixel.conf
+CreateLink /etc/fonts/conf.d/10-sub-pixel-rgb.conf ../conf.avail/10-sub-pixel-rgb.conf
