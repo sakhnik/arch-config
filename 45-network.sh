@@ -1,6 +1,14 @@
+AddPackage iwd # Internet Wireless Daemon
+AddPackage network-manager-applet # Applet for managing network connections
 AddPackage nfs-utils # Support programs for Network File Systems
+AddPackage nm-connection-editor # NetworkManager GUI connection editor and widgets
 AddPackage tinc # VPN (Virtual Private Network) daemon
-AddPackage --foreign iwd-git # Internet Wireless Daemon
+
+
+CreateLink /etc/systemd/system/dbus-org.freedesktop.NetworkManager.service /usr/lib/systemd/system/NetworkManager.service
+CreateLink /etc/systemd/system/dbus-org.freedesktop.nm-dispatcher.service /usr/lib/systemd/system/NetworkManager-dispatcher.service
+CreateLink /etc/systemd/system/multi-user.target.wants/NetworkManager.service /usr/lib/systemd/system/NetworkManager.service
+CreateLink /etc/systemd/system/network-online.target.wants/NetworkManager-wait-online.service /usr/lib/systemd/system/NetworkManager-wait-online.service
 
 
 cat >"$(CreateFile /etc/systemd/network/25-wireless.network)" <<EOF
@@ -31,14 +39,7 @@ BindsTo=sys-subsystem-net-devices-wifi.device
 After=sys-subsystem-net-devices-wifi.device
 EOF
 
-CreateLink /etc/systemd/system/dbus-org.freedesktop.network1.service /usr/lib/systemd/system/systemd-networkd.service
-CreateLink /etc/systemd/system/dbus-org.freedesktop.resolve1.service /usr/lib/systemd/system/systemd-resolved.service
-CreateLink /etc/systemd/system/multi-user.target.wants/systemd-networkd.service /usr/lib/systemd/system/systemd-networkd.service
-CreateLink /etc/systemd/system/multi-user.target.wants/systemd-resolved.service /usr/lib/systemd/system/systemd-resolved.service
-CreateLink /etc/systemd/system/network-online.target.wants/systemd-networkd-wait-online.service /usr/lib/systemd/system/systemd-networkd-wait-online.service
-CreateLink /etc/systemd/system/sockets.target.wants/systemd-networkd.socket /usr/lib/systemd/system/systemd-networkd.socket
 
-CreateLink /etc/systemd/system/multi-user.target.wants/iwd.service /usr/lib/systemd/system/iwd.service
 CreateLink /etc/systemd/system/multi-user.target.wants/tinc.service /usr/lib/systemd/system/tinc.service
 
 ###########################################################
