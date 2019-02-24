@@ -9,7 +9,12 @@ AddPackage i3lock # An improved screenlocker based upon XCB and PAM
 AddPackage i3status # Generates status bar to use with i3bar, dzen2 or xmobar
 AddPackage lightdm-gtk-greeter-settings # Settings editor for the LightDM GTK+ Greeter
 AddPackage python-colour # Colour representations manipulation library (RGB, HSL, web, ...)
-AddPackage sway # i3 compatible window manager for Wayland
+AddPackage ttf-baekmuk # Korean fonts
+AddPackage ttf-droid # General-purpose fonts released by Google as part of Android
+AddPackage ttf-freefont # Set of free outline fonts covering the Unicode character set
+AddPackage ttf-liberation # Red Hats Liberation fonts.
+AddPackage ttf-linux-libertine # Serif (Libertine) and Sans Serif (Biolinum) OpenType fonts with large Unicode coverage
+AddPackage ttf-opensans # Sans-serif typeface commissioned by Google
 AddPackage x11-ssh-askpass # Lightweight passphrase dialog for SSH
 AddPackage xautolock # An automatic X screen-locker/screen-saver
 AddPackage xclip # Command line interface to the X11 clipboard
@@ -24,6 +29,10 @@ AddPackage xorg-xinit # X.Org initialisation program
 AddPackage xorg-xrandr # Primitive command line interface to RandR extension
 
 AddPackage --foreign i3pystatus # i3status replacement written in python for the i3 window manager
+AddPackage --foreign ttf-ms-fonts # Core TTF Fonts from Microsoft
+AddPackage --foreign ttf-raleway # An elegant sans-serif font, designed in a single thin weight.
+AddPackage --foreign sway-git # i3-compatible Wayland compositor
+AddPackage --foreign wlroots-git # Modular Wayland compositor library
 AddPackage --foreign xkb-switch # Program that allows to query and change the XKB layout state
 
 cat >"$(CreateFile /etc/X11/xorg.conf.d/00-keyboard.conf)" <<EOF

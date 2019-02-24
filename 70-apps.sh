@@ -125,12 +125,6 @@ AddPackage texlive-langcyrillic # TeX Live - Fonts and macro packages to typeset
 AddPackage texlive-latexextra # TeX Live - Large collection of add-on packages for LaTeX
 AddPackage transmission-cli # Fast, easy, and free BitTorrent client (CLI tools, daemon and web client)
 AddPackage transmission-gtk # Fast, easy, and free BitTorrent client (GTK+ GUI)
-AddPackage ttf-baekmuk # Korean fonts
-AddPackage ttf-droid # General-purpose fonts released by Google as part of Android
-AddPackage ttf-freefont # Set of free outline fonts covering the Unicode character set
-AddPackage ttf-liberation # Red Hats Liberation fonts.
-AddPackage ttf-linux-libertine # Serif (Libertine) and Sans Serif (Biolinum) OpenType fonts with large Unicode coverage
-AddPackage ttf-opensans # Sans-serif typeface commissioned by Google
 AddPackage uboot-tools # U-Boot bootloader utility tools
 AddPackage udiskie # Removable disk automounter using udisks
 AddPackage vino # A VNC server for the GNOME desktop
@@ -165,8 +159,6 @@ AddPackage --foreign qemu-user-static # A generic and open source processor emul
 AddPackage --foreign realvnc-vnc-viewer # VNC remote desktop client software by RealVNC
 AddPackage --foreign teamviewer # All-In-One Software for Remote Support and Online Meetings
 AddPackage --foreign tor-browser-en # Tor Browser Bundle
-AddPackage --foreign ttf-opensans # Sans-serif typeface commissioned by Google
-AddPackage --foreign ttf-raleway # An elegant sans-serif font, designed in a single thin weight.
 AddPackage --foreign universal-ctags-git # Multilanguage reimplementation of the Unix ctags utility
 AddPackage --foreign xdg-utils-mimeo # Command line tools that assist applications with a variety of desktop integration tasks; patched to use mimeo
 
