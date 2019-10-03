@@ -1,5 +1,4 @@
 AddPackage iwd # Internet Wireless Daemon
-AddPackage network-manager-applet # Applet for managing network connections
 AddPackage nfs-utils # Support programs for Network File Systems
 AddPackage nm-connection-editor # NetworkManager GUI connection editor and widgets
 AddPackage tinc # VPN (Virtual Private Network) daemon

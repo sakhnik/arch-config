@@ -1,16 +1,21 @@
 AddPackage aisleriot # A collection of patience games written in guile scheme
 AddPackage alacritty # A cross-platform, GPU-accelerated terminal emulator
 AddPackage alacritty-terminfo # Terminfo files for the alacritty terminal emulator
+AddPackage anki # Helps you remember facts (like words/phrases in a foreign language) efficiently
 AddPackage arandr # Provide a simple visual front end for XRandR 1.2.
 AddPackage arc-gtk-theme # A flat theme with transparent elements for GTK 3, GTK 2 and Gnome-Shell
 AddPackage arc-icon-theme # Arc icon theme. Official releases only.
 AddPackage arch-install-scripts # Scripts to aid in installing Arch Linux
-AddPackage asciinema # Record and share terminal sessions
 AddPackage arm-none-eabi-gcc # The GNU Compiler Collection - cross compiler for ARM EABI (bare-metal) target
+AddPackage asciinema # Record and share terminal sessions
 AddPackage asp # Arch Linux build source file management tool
 AddPackage atomix # Build molecules out of single atoms
 AddPackage atool # A script for managing file archives of various types
+AddPackage bandit # Python security linter from OpenStack Security
 AddPackage baobab # A graphical directory tree analyzer
+AddPackage blender # A fully integrated 3D graphics creation suite
+AddPackage bluez # Daemons for the bluetooth protocol stack
+AddPackage bluez-utils # Development and debugging utilities for the bluetooth protocol stack
 AddPackage chromium # A web browser built for speed, simplicity, and security
 AddPackage composer # Dependency Manager for PHP
 AddPackage cups # The CUPS Printing System - daemon package
@@ -28,19 +33,21 @@ AddPackage ffmpegthumbnailer # Lightweight video thumbnailer that can be used by
 AddPackage figlet # A program for making large letters out of ordinary text
 AddPackage file-roller # Create and modify archives
 AddPackage firefox # Standalone web browser from mozilla.org
-AddPackage firefox-i18n-uk # Ukrainian language pack for Firefox
 AddPackage five-or-more # Remove colored balls from the board by forming lines
+AddPackage flake8 # The modular source code checker
 AddPackage flashrom # Utility for reading, writing, erasing and verifying flash ROM chips
 AddPackage foomatic-db # Foomatic - The collected knowledge about printers, drivers, and driver options in XML files, used by foomatic-db-engine to generate PPD files.
 AddPackage foomatic-db-ppds # Foomatic - PPDs from printer manufacturers
 AddPackage fortune-mod # The Fortune Cookie Program from BSD games
 AddPackage four-in-a-row # Make lines of the same color to win
 AddPackage freerdp # Free RDP client
+AddPackage fzf # Command-line fuzzy finder
 AddPackage gimp # GNU Image Manipulation Program
 AddPackage glade # User Interface Builder for GTK+ applications
 AddPackage glibmm-docs # C++ bindings for GLib (documentation)
 AddPackage gnome-2048 # Obtain the 2048 tile
 AddPackage gnome-calculator # GNOME Scientific calculator
+AddPackage gnome-chess # Play the classic two-player boardgame of chess
 AddPackage gnome-common # Common development macros for GNOME
 AddPackage gnome-desktop # Library with common API for various GNOME modules
 AddPackage gnome-font-viewer # A font viewer utility for GNOME
@@ -53,6 +60,8 @@ AddPackage gnome-robots # Avoid the robots and make them crash into each other
 AddPackage gnome-taquin # Move tiles so that they reach their places
 AddPackage gnome-terminal # The GNOME Terminal Emulator
 AddPackage gnubg # World class backgammon application
+AddPackage gnuchess # Play chess against the computer on a terminal and an engine for graphical chess frontends
+AddPackage gopass # The slightly more awesome standard unix password manager for teams.
 AddPackage gst-libav # GStreamer Multimedia Framework ffmpeg Plugin
 AddPackage gst-plugins-good # GStreamer Multimedia Framework Good Plugins
 AddPackage gst-plugins-ugly # GStreamer Multimedia Framework Ugly Plugins
@@ -60,9 +69,12 @@ AddPackage gstreamer-vaapi # GStreamer Multimedia Framework VAAPI Plugin
 AddPackage gucharmap # Gnome Unicode Charmap
 AddPackage gvim # Vi Improved, a highly configurable, improved version of the vi text editor (with advanced features, such as a GUI)
 AddPackage highlight # Fast and flexible source code highlighter (CLI version)
+AddPackage hledger # Command-line interface for the hledger accounting tool
+AddPackage hledger-web # Web interface for the hledger accounting tool
 AddPackage iagno # Dominate the board in a classic version of Reversi
+AddPackage icewm # A Window Manager designed for speed, usability, and consistency
+AddPackage imv # Image viewer for Wayland and X11
 AddPackage inkscape # Professional vector graphics editor
-AddPackage josm # An editor for OpenStreetMap written in Java
 AddPackage ledger # Double-entry accounting system with a command-line reporting interface
 AddPackage libreoffice-still # LibreOffice maintenance branch
 AddPackage libreoffice-still-uk # Ukrainian language pack for LibreOffice still
@@ -78,8 +90,12 @@ AddPackage mediainfo # supplies technical and tag information about a video or a
 AddPackage mercurial # A scalable distributed SCM tool
 AddPackage mesa-demos # Mesa demos and tools incl. glxinfo + glxgears
 AddPackage minicom # A serial communication program
+AddPackage modem-manager-gui # Frontend for ModemManager daemon able to control specific modem functions
 AddPackage mousetweaks # Mouse accessibility enhancements
 AddPackage mpv # a free, open source, and cross-platform media player
+AddPackage mypy # Optional static typing for Python 2 and 3 (PEP484)
+AddPackage neofetch # A CLI system information tool written in BASH that supports displaying images.
+AddPackage neovim # Fork of Vim aiming to improve user experience, plugins, and GUIs
 AddPackage netbeans # IDE for Java, HTML5, PHP, Groovy, C and C++
 AddPackage nethack # A single player dungeon exploration game
 AddPackage networkmanager # Network connection manager and user applications
@@ -87,7 +103,6 @@ AddPackage nginx-mainline # Lightweight HTTP server and IMAP/POP3 proxy server, 
 AddPackage nmap # Utility for network discovery and security auditing
 AddPackage notification-daemon # Notification daemon for the desktop notifications framework
 AddPackage odt2txt # extracts the text out of OpenDocument Texts
-AddPackage opendesktop-fonts # Chinese TrueType Fonts
 AddPackage openjpeg # An open source JPEG 2000 codec
 AddPackage openscad # The programmers solid 3D CAD modeller
 AddPackage pass # Stores, retrieves, generates, and synchronizes passwords securely
@@ -99,20 +114,23 @@ AddPackage php-fpm # FastCGI Process Manager for PHP
 AddPackage progress # Shows running coreutils basic commands and displays stats
 AddPackage pulseaudio # A featureful, general-purpose sound server
 AddPackage pulseaudio-alsa # ALSA Configuration for PulseAudio
+AddPackage pyenv # Easily switch between multiple versions of Python
 AddPackage python-chardet # Python3 module for character encoding auto-detection
 AddPackage python-evdev # Python bindings for the Linux input subsystem
-AddPackage python-neovim # Python 3 client for neovim
+AddPackage python-pylint # Analyzes Python code looking for bugs and signs of poor quality
+AddPackage python-pynvim # Python client for Neovim
 AddPackage python-pytest # Simple powerful testing with Python
 AddPackage python-pyudev # A pure Python 3.x binding to libudev
-AddPackage qiv # Quick Image Viewer (qiv) is a very small and fast GDK/Imlib image viewer
 AddPackage qrencode # C library for encoding data in a QR Code symbol.
-AddPackage qt4 # A cross-platform application and UI framework
+AddPackage qt5-wayland # Provides APIs for Wayland
 AddPackage qtcreator # Lightweight, cross-platform integrated development environment
 AddPackage remmina # remote desktop client written in GTK+
+AddPackage ripgrep # A search tool that combines the usability of ag with the raw speed of grep
 AddPackage samba # SMB Fileserver and AD Domain server
 AddPackage scdoc # Tool for generating roff manual pages
 AddPackage schroedinger # An implemenation of the Dirac video codec in ANSI C code
 AddPackage seahorse # GNOME application for managing PGP keys.
+AddPackage shellcheck # Shell script analysis tool
 AddPackage shotwell # A digital photo organizer designed for the GNOME desktop environment
 AddPackage speedtest-cli # Command line interface for testing internet bandwidth using speedtest.net
 AddPackage spice-gtk # GTK+ client library for SPICE
@@ -121,43 +139,52 @@ AddPackage stellarium # A stellarium with great graphics and a nice database of 
 AddPackage stow # Manage installation of multiple softwares in the same directory tree
 AddPackage strace # A diagnostic, debugging and instructional userspace tracer
 AddPackage swig # Generate scripting interfaces to C/C++ code
+AddPackage termite # A simple VTE-based terminal
 AddPackage texlive-langcyrillic # TeX Live - Fonts and macro packages to typeset Cyrillic texts
 AddPackage texlive-latexextra # TeX Live - Large collection of add-on packages for LaTeX
 AddPackage transmission-cli # Fast, easy, and free BitTorrent client (CLI tools, daemon and web client)
 AddPackage transmission-gtk # Fast, easy, and free BitTorrent client (GTK+ GUI)
 AddPackage uboot-tools # U-Boot bootloader utility tools
 AddPackage udiskie # Removable disk automounter using udisks
+AddPackage usb_modeswitch # Activating switchable USB devices on Linux.
 AddPackage vino # A VNC server for the GNOME desktop
+AddPackage virt-manager # Desktop user interface for managing virtual machines
+AddPackage virt-viewer # A lightweight interface for interacting with the graphical display of virtualized guest OS.
 AddPackage vlc # Multi-platform MPEG, VCD/DVD, and DivX player
 AddPackage w3m # Text-based Web browser as well as pager
-AddPackage wireshark-gtk # a free network protocol analyzer for Unix/Linux and Windows - GTK frontend
+AddPackage wireshark-qt # Network traffic and protocol analyzer/sniffer - Qt GUI
 AddPackage wpa_supplicant # A utility providing key negotiation for WPA wireless networks
 AddPackage wvdial # A dialer program to connect to the Internet
 AddPackage x2goclient # a graphical client (Qt4) for the X2Go system
+AddPackage x2goserver # Open source graphical Remote Desktop and terminal server based on NX technology
 AddPackage xcb-util-errors # XCB errors library
 AddPackage xdg-user-dirs-gtk # Creates user dirs and asks to relocalize them
 AddPackage xdotool # Command-line X11 automation tool
-AddPackage xf86-input-synaptics # Synaptics driver for notebook touchpads
-AddPackage xorg-xinput # Small commandline tool to configure devices
 AddPackage yelp # Get help with GNOME
 AddPackage youtube-dl # A small command-line program to download videos from YouTube.com and a few more sites
+AddPackage youtube-viewer # Command line utility for viewing YouTube videos
 
 AddPackage --foreign android-sdk-platform-tools # Platform-Tools for Google Android SDK (adb and fastboot)
+AddPackage --foreign bashdb # A debugger for Bash scripts loosely modeled on the gdb command syntax
 AddPackage --foreign bindfs # A FUSE filesystem for mirroring a directory to another directory, similar to 'mount --bind', with permission settings.
+AddPackage --foreign binfmt-qemu-static # Register qemu-static interpreters for various binary formats
+AddPackage --foreign bluez-firmware # Firmwares for Broadcom BCM203x and STLC2300 Bluetooth chips
+AddPackage --foreign bluez-rfcomm # deprecated rfcomm tool from bluez
+AddPackage --foreign brillo # Control the brightness of backlight and keyboard LED devices
 AddPackage --foreign cquery # Low-latency vscode language server for large C++ code-bases, powered by libclang.
 AddPackage --foreign doctest # The lightest feature rich C++ single header testing framework
 AddPackage --foreign libcatch-cpp-headers # C++-native framework for unit-tests using only a header file
 AddPackage --foreign mimeo # Open files by MIME-type or file name using regular expressions.
-AddPackage --foreign neovim-git # Fork of Vim aiming to improve user experience, plugins, and GUIs.
 AddPackage --foreign pamtester # Tiny program to test the pluggable authentication modules (PAM) facility
 AddPackage --foreign peerflix # Streaming torrent client for node.js
 AddPackage --foreign php-language-server # PHP language server implementation
-AddPackage --foreign pkgbuild-introspection # Tools for generating .AURINFO files and PKGBUILD data extraction
-AddPackage --foreign pyenv # Simple Python version management
-AddPackage --foreign python2-neovim # Python 2 client for neovim
+AddPackage --foreign python2-neovim-git # Python client to neovim, git version. Use this to keep up with neovim-git
+AddPackage --foreign qemu-user-static-bin # A generic and open source machine emulator, statically linked
 AddPackage --foreign realvnc-vnc-viewer # VNC remote desktop client software by RealVNC
+AddPackage --foreign remark-cli # CLI to process markdown with remark using plugins
+AddPackage --foreign remark-lint # Lint markdown with remark
 AddPackage --foreign teamviewer # All-In-One Software for Remote Support and Online Meetings
-AddPackage --foreign tor-browser-en # Tor Browser Bundle
+AddPackage --foreign tor-browser # Tor Browser Bundle
 AddPackage --foreign universal-ctags-git # Multilanguage reimplementation of the Unix ctags utility
 AddPackage --foreign xdg-utils-mimeo # Command line tools that assist applications with a variety of desktop integration tasks; patched to use mimeo
 
