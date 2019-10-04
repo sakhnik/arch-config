@@ -66,3 +66,7 @@ cups:x:209:
 rpc:x:32:
 mysql:x:990:
 geoclue:x:989:
+flatpak:x:988:
+gluster:x:987:
+x2gouser:x:111:
+x2goprint:x:112:
