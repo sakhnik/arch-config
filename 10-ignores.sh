@@ -1,6 +1,7 @@
 IgnorePath '*/__pycache__/*'
 IgnorePath '*/texmf/*'
 IgnorePath '/boot/*.img'
+IgnorePath '/boot/loader/random-seed'
 IgnorePath '/boot/vmlinuz*'
 IgnorePath '/boot/EFI/*'
 IgnorePath '/etc/**/.git'

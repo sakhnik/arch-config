@@ -56,6 +56,9 @@ ExecStartPost=/usr/bin/sleep 1
 WantedBy=sleep.target
 EOF
 
+CopyFile /etc/systemd/system/sshd.socket
+CopyFile /etc/systemd/system/sshd@.service
+
 # Enable locking for the user named sakhnik
 CreateLink /etc/systemd/system/sleep.target.wants/i3lock@sakhnik.service /etc/systemd/system/i3lock@.service
 
@@ -65,7 +68,7 @@ CreateLink /etc/systemd/system/multi-user.target.wants/remote-fs.target /usr/lib
 CreateLink /etc/systemd/system/sleep.target.wants/root-suspend.service /etc/systemd/system/root-suspend.service
 CreateLink /etc/systemd/system/sockets.target.wants/avahi-daemon.socket /usr/lib/systemd/system/avahi-daemon.socket
 CreateLink /etc/systemd/system/sockets.target.wants/org.cups.cupsd.socket /usr/lib/systemd/system/org.cups.cupsd.socket
-CreateLink /etc/systemd/system/sockets.target.wants/sshd.socket /usr/lib/systemd/system/sshd.socket
+CreateLink /etc/systemd/system/sockets.target.wants/sshd.socket /etc/systemd/system/sshd.socket
 CreateLink /etc/systemd/system/suspend.target.wants/root-resume.service /etc/systemd/system/root-resume.service
 CreateLink /etc/systemd/system/sysinit.target.wants/systemd-timesyncd.service /usr/lib/systemd/system/systemd-timesyncd.service
 CreateLink /etc/systemd/user/default.target.wants/xdg-user-dirs-update.service /usr/lib/systemd/user/xdg-user-dirs-update.service
