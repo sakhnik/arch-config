@@ -69,9 +69,6 @@ sed -i -f - "$(GetPackageOriginalFile pacman /etc/pacman.conf)" <<EOF
 /^#CheckSpace/ s/^#//
 /^#VerbosePkgLists/ s/^#//
 /VerbosePkgLists/ a ILoveCandy
-/#\[testing\]/,/^$/ s/^#//
-/#\[community-testing\]/,/^$/ s/^#//
-/#\[multilib-testing\]/,/^$/ s/^#//
 /#\[multilib\]/,/^$/ s/^#//
 EOF
 
