@@ -1,4 +1,5 @@
 Subnet = 10.0.0.2/32
+Port = 6656
 
 -----BEGIN RSA PUBLIC KEY-----
 MIICCgKCAgEAuc2lBb71JotOXw6sG/jGfltCeqCqmbAAMdyV6ui2fDu7lZpA+Xv9

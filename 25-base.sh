@@ -170,6 +170,7 @@ cat >>"$(GetPackageOriginalFile filesystem /etc/hosts)" <<EOF
 10.0.1.7   home-venus
 10.0.2.2   farm-pangea
 10.0.2.4   farm-ustia
+10.0.2.5   farm-w8
 EOF
 
 cat >"$(CreateFile /etc/hostname)" <<EOF
