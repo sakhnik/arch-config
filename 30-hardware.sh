@@ -17,7 +17,7 @@ vm.swappiness=60
 EOF
 
 cat >"$(CreateFile /etc/tmpfiles.d/10-ioscheduler.conf)" <<EOF
-w /sys/block/sda/queue/scheduler - - - - noop
+w /sys/block/sda/queue/scheduler - - - - none
 EOF
 
 cat >"$(CreateFile /etc/tmpfiles.d/99-powertop.conf)" <<EOF
