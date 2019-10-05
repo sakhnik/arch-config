@@ -7,7 +7,7 @@ AddPackage --foreign modprobed-db # Keeps track of EVERY kernel module ever used
 
 cat >"$(CreateFile /etc/udev/rules.d/50-bluetooth.rules)" <<EOF
 # disable bluetooth
-SUBSYSTEM=="rfkill", ATTR{type}=="bluetooth", ATTR{state}="0"
+#SUBSYSTEM=="rfkill", ATTR{type}=="bluetooth", ATTR{state}="0"
 EOF
 
 # Apparently, swap is good for system health:
