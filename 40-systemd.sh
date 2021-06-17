@@ -100,19 +100,7 @@ initrd  /initramfs-linux.img
 options root=PARTUUID=ee2d9278-43e4-4112-a7cc-ee443439f9e9 add_efi_memmap intel_iommu=on acpi_backlight=none zswap.enabled=1
 EOF
 
-cat >"$(CreateFile /boot/loader/entries/arch-lts49.conf)" <<EOF
-title   Arch Linux LTS 4.9
-linux   /vmlinuz-linux-lts49
-initrd  /intel-ucode.img
-initrd  /initramfs-linux-lts49.img
-options root=PARTUUID=ee2d9278-43e4-4112-a7cc-ee443439f9e9 add_efi_memmap intel_iommu=on acpi_backlight=none zswap.enabled=1
-EOF
-
 # Since /boot is vfat, file properties aren't preserved
 SetFileProperty /boot/loader/entries/arch-lts.conf mode 755
-SetFileProperty /boot/loader/entries/arch-lts49.conf mode 755
 SetFileProperty /boot/loader/entries/arch.conf mode 755
 SetFileProperty /boot/loader/loader.conf mode 755
-
-# A script to conveniently build linux-lts49
-CopyFile /usr/local/bin/build-linux-lts49.sh 755
