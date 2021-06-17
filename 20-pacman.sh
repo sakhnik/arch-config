@@ -1,7 +1,8 @@
+AddPackage aurutils # helper tools for the arch user repository
 AddPackage pacman # A library-based package manager with dependency support
 AddPackage pacman-contrib # Contributed scripts and tools for pacman systems
 AddPackage pacutils # Helper tools for libalpm
-AddPackage --foreign yay-bin # Yet another yogurt. Pacman wrapper and AUR helper written in go. Pre-compiled.
+AddPackage vifm # A file manager with curses interface, which provides Vi[m]-like environment
 
 cat >"$(CreateFile /etc/pacman.d/hooks/paccache-remove.hook)" <<EOF
 [Trigger]

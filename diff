@@ -9,6 +9,6 @@ export LANG=C
 
 pkg=$(pacman -Qo $file | sed -E 's|.* is owned by ([^ ]+) ([^ ]+)$|\1-\2|')
 
-tar -xf /var/cache/pacman/pkg/$pkg*.tar.xz $rpath
+#tar -xf /var/cache/pacman/pkg/$pkg*.tar.zst $rpath
 
 diff $rpath $file

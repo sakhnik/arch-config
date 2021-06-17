@@ -1,8 +1,9 @@
+AddPackage acpid # A daemon for delivering ACPI power management events with netlink support
+AddPackage android-udev # Udev rules to connect Android devices to your linux box
 AddPackage hwinfo # Hardware detection tool from openSUSE
 AddPackage iw # nl80211 based CLI configuration utility for wireless devices
 AddPackage lshw # A small tool to provide detailed information on the hardware configuration of the machine.
 AddPackage powertop # A tool to diagnose issues with power consumption and power management
-AddPackage --foreign android-udev-git # Udev rules to connect Android devices to your linux box
 AddPackage --foreign modprobed-db # Keeps track of EVERY kernel module ever used - useful for those of us who make localmodconfig 
 
 cat >"$(CreateFile /etc/udev/rules.d/50-bluetooth.rules)" <<EOF
@@ -46,3 +47,7 @@ EOF
 
 # Share modprobed-db for all users
 CopyFile /etc/modprobed.db '' sakhnik users
+
+CopyFile /etc/acpi/events/anything
+CopyFile /etc/acpi/headphone.sh 755
+CreateLink /etc/systemd/system/multi-user.target.wants/acpid.service /usr/lib/systemd/system/acpid.service

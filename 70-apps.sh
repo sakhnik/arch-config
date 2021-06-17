@@ -1,6 +1,9 @@
 AddPackage aisleriot # A collection of patience games written in guile scheme
 AddPackage alacritty # A cross-platform, GPU-accelerated terminal emulator
 AddPackage alacritty-terminfo # Terminfo files for the alacritty terminal emulator
+AddPackage alsa-plugins # Additional ALSA plugins
+AddPackage alsa-utils # Advanced Linux Sound Architecture - Utilities
+AddPackage android-tools # Android platform tools
 AddPackage anki # Helps you remember facts (like words/phrases in a foreign language) efficiently
 AddPackage arandr # Provide a simple visual front end for XRandR 1.2.
 AddPackage arc-gtk-theme # A flat theme with transparent elements for GTK 3, GTK 2 and Gnome-Shell
@@ -113,7 +116,6 @@ AddPackage php # A general-purpose scripting language that is especially suited 
 AddPackage php-fpm # FastCGI Process Manager for PHP
 AddPackage progress # Shows running coreutils basic commands and displays stats
 AddPackage pulseaudio # A featureful, general-purpose sound server
-AddPackage pulseaudio-alsa # ALSA Configuration for PulseAudio
 AddPackage pyenv # Easily switch between multiple versions of Python
 AddPackage python-chardet # Python3 module for character encoding auto-detection
 AddPackage python-evdev # Python bindings for the Linux input subsystem
@@ -164,7 +166,6 @@ AddPackage yelp # Get help with GNOME
 AddPackage youtube-dl # A small command-line program to download videos from YouTube.com and a few more sites
 AddPackage youtube-viewer # Command line utility for viewing YouTube videos
 
-AddPackage --foreign android-sdk-platform-tools # Platform-Tools for Google Android SDK (adb and fastboot)
 AddPackage --foreign bashdb # A debugger for Bash scripts loosely modeled on the gdb command syntax
 AddPackage --foreign bindfs # A FUSE filesystem for mirroring a directory to another directory, similar to 'mount --bind', with permission settings.
 AddPackage --foreign binfmt-qemu-static # Register qemu-static interpreters for various binary formats
