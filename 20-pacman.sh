@@ -1,5 +1,4 @@
 AddPackage aurutils # helper tools for the arch user repository
-AddPackage pacman # A library-based package manager with dependency support
 AddPackage pacman-contrib # Contributed scripts and tools for pacman systems
 AddPackage pacutils # Helper tools for libalpm
 AddPackage vifm # A file manager with curses interface, which provides Vi[m]-like environment
@@ -42,35 +41,21 @@ EOF
 
 CopyFile /usr/local/bin/pacman-check-local-deps.sh 755
 
-cat >"$(CreateFile /etc/pacman.d/hooks/check-updates.hook)" <<EOF
-[Trigger]
-Operation = Upgrade
-Type = Package
-Target = *
-
-[Action]
-Description = Checking for upstream updates...
-When = PostTransaction
-Exec = /usr/local/bin/check-upstream-updates.sh
-EOF
-
-CopyFile /usr/local/bin/check-upstream-updates.sh 755
-
 sed -i -f - "$(GetPackageOriginalFile pacman-mirrorlist /etc/pacman.d/mirrorlist)" <<'EOF'
-4 a
-4 a Server = http://archlinux.ip-connect.vn.ua/$repo/os/$arch
-4 a Server = https://archlinux.ip-connect.vn.ua/$repo/os/$arch
-4 a Server = http://mirrors.nix.org.ua/linux/archlinux/$repo/os/$arch
-4 a Server = https://mirrors.nix.org.ua/linux/archlinux/$repo/os/$arch
+/mirror.mirohost.net/ s/^#//
+/mirrors.nix.org.ua/ s/^#//
 EOF
 
 sed -i -f - "$(GetPackageOriginalFile pacman /etc/pacman.conf)" <<EOF
+/^#CacheDir/ s/^#//
+/CacheDir/ a CacheDir    = /var/cache/pacman/custom/
+/CleanMethod/ s/.*/CleanMethod = KeepCurrent/
 /^#Color/ s/^#//
-/^#TotalDownload/ s/^#//
 /^#CheckSpace/ s/^#//
 /^#VerbosePkgLists/ s/^#//
-/VerbosePkgLists/ a ILoveCandy
-/#\[multilib\]/,/^$/ s/^#//
+/^#ParallelDownloads/ s/.*/ParallelDownloads = 3/
+/ParallelDownloads/ a ILoveCandy
+/#\[custom\]/,/^$/ s/^#//
 EOF
 
 sed -i -f - "$(GetPackageOriginalFile pacman /etc/makepkg.conf)" <<EOF
