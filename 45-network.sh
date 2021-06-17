@@ -1,7 +1,6 @@
-AddPackage iwd # Internet Wireless Daemon
 AddPackage nfs-utils # Support programs for Network File Systems
 AddPackage nm-connection-editor # NetworkManager GUI connection editor and widgets
-AddPackage tinc # VPN (Virtual Private Network) daemon
+AddPackage tinc-pre # VPN (Virtual Private Network) daemon (Pre-release)
 
 
 CreateLink /etc/systemd/system/dbus-org.freedesktop.NetworkManager.service /usr/lib/systemd/system/NetworkManager.service

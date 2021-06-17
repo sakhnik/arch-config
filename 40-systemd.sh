@@ -1,7 +1,6 @@
 AddPackage linux # The Linux kernel and modules
 AddPackage linux-lts # The Linux-lts kernel and modules
 AddPackage systemd-boot-pacman-hook # Pacman hook to upgrade systemd-boot after systemd upgrade.
-AddPackage systemd-sysvcompat # sysvinit compat for systemd
 
 AddPackage --foreign earlyoom # Early OOM Daemon for Linux
 

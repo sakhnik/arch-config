@@ -1,170 +1,72 @@
 AddPackage aisleriot # A collection of patience games written in guile scheme
 AddPackage alacritty # A cross-platform, GPU-accelerated terminal emulator
-AddPackage alacritty-terminfo # Terminfo files for the alacritty terminal emulator
 AddPackage alsa-plugins # Additional ALSA plugins
 AddPackage alsa-utils # Advanced Linux Sound Architecture - Utilities
 AddPackage android-tools # Android platform tools
 AddPackage anki # Helps you remember facts (like words/phrases in a foreign language) efficiently
-AddPackage arandr # Provide a simple visual front end for XRandR 1.2.
-AddPackage arc-gtk-theme # A flat theme with transparent elements for GTK 3, GTK 2 and Gnome-Shell
-AddPackage arc-icon-theme # Arc icon theme. Official releases only.
 AddPackage arch-install-scripts # Scripts to aid in installing Arch Linux
-AddPackage arm-none-eabi-gcc # The GNU Compiler Collection - cross compiler for ARM EABI (bare-metal) target
 AddPackage asciinema # Record and share terminal sessions
 AddPackage asp # Arch Linux build source file management tool
-AddPackage atomix # Build molecules out of single atoms
-AddPackage atool # A script for managing file archives of various types
-AddPackage bandit # Python security linter from OpenStack Security
 AddPackage baobab # A graphical directory tree analyzer
-AddPackage blender # A fully integrated 3D graphics creation suite
 AddPackage bluez # Daemons for the bluetooth protocol stack
 AddPackage bluez-utils # Development and debugging utilities for the bluetooth protocol stack
 AddPackage chromium # A web browser built for speed, simplicity, and security
-AddPackage composer # Dependency Manager for PHP
-AddPackage cups # The CUPS Printing System - daemon package
-AddPackage cura # A software solution for 3D printing aimed at RepRaps and the Ultimaker.
-AddPackage dante # SOCKS v4 and v5 compatible proxy server and client
-AddPackage dconf-editor # dconf Editor
-AddPackage debootstrap # Bootstrap a basic Debian system
-AddPackage delve # A debugger for the Go programming language.
-AddPackage devhelp # API documentation browser for GNOME
-AddPackage dtc # Device Tree Compiler
 AddPackage encfs # Encrypted filesystem in user-space
-AddPackage eog # Eye of Gnome
 AddPackage evince # Document viewer (PDF, Postscript, djvu, tiff, dvi, XPS, SyncTex support with gedit, comics books (cbr,cbz,cb7 and cbt))
-AddPackage ffmpegthumbnailer # Lightweight video thumbnailer that can be used by file managers.
-AddPackage figlet # A program for making large letters out of ordinary text
-AddPackage file-roller # Create and modify archives
 AddPackage firefox # Standalone web browser from mozilla.org
-AddPackage five-or-more # Remove colored balls from the board by forming lines
-AddPackage flake8 # The modular source code checker
-AddPackage flashrom # Utility for reading, writing, erasing and verifying flash ROM chips
-AddPackage foomatic-db # Foomatic - The collected knowledge about printers, drivers, and driver options in XML files, used by foomatic-db-engine to generate PPD files.
-AddPackage foomatic-db-ppds # Foomatic - PPDs from printer manufacturers
-AddPackage fortune-mod # The Fortune Cookie Program from BSD games
-AddPackage four-in-a-row # Make lines of the same color to win
-AddPackage freerdp # Free RDP client
 AddPackage fzf # Command-line fuzzy finder
-AddPackage gimp # GNU Image Manipulation Program
+AddPackage gimp-git # GNU Image Manipulation Program
 AddPackage glade # User Interface Builder for GTK+ applications
-AddPackage glibmm-docs # C++ bindings for GLib (documentation)
-AddPackage gnome-2048 # Obtain the 2048 tile
-AddPackage gnome-calculator # GNOME Scientific calculator
 AddPackage gnome-chess # Play the classic two-player boardgame of chess
-AddPackage gnome-common # Common development macros for GNOME
-AddPackage gnome-desktop # Library with common API for various GNOME modules
 AddPackage gnome-font-viewer # A font viewer utility for GNOME
 AddPackage gnome-keyring # Stores passwords and encryption keys
-AddPackage gnome-klotski # Slide blocks to solve the puzzle
-AddPackage gnome-mahjongg # Disassemble a pile of tiles by removing matching pairs
 AddPackage gnome-mines # Clear hidden mines from a minefield
-AddPackage gnome-nibbles # Guide a worm around a maze
-AddPackage gnome-robots # Avoid the robots and make them crash into each other
-AddPackage gnome-taquin # Move tiles so that they reach their places
 AddPackage gnome-terminal # The GNOME Terminal Emulator
 AddPackage gnubg # World class backgammon application
 AddPackage gnuchess # Play chess against the computer on a terminal and an engine for graphical chess frontends
-AddPackage gopass # The slightly more awesome standard unix password manager for teams.
 AddPackage gst-libav # GStreamer Multimedia Framework ffmpeg Plugin
 AddPackage gst-plugins-good # GStreamer Multimedia Framework Good Plugins
 AddPackage gst-plugins-ugly # GStreamer Multimedia Framework Ugly Plugins
 AddPackage gstreamer-vaapi # GStreamer Multimedia Framework VAAPI Plugin
-AddPackage gucharmap # Gnome Unicode Charmap
-AddPackage gvim # Vi Improved, a highly configurable, improved version of the vi text editor (with advanced features, such as a GUI)
-AddPackage highlight # Fast and flexible source code highlighter (CLI version)
-AddPackage hledger # Command-line interface for the hledger accounting tool
-AddPackage hledger-web # Web interface for the hledger accounting tool
-AddPackage iagno # Dominate the board in a classic version of Reversi
-AddPackage icewm # A Window Manager designed for speed, usability, and consistency
 AddPackage imv # Image viewer for Wayland and X11
 AddPackage inkscape # Professional vector graphics editor
 AddPackage ledger # Double-entry accounting system with a command-line reporting interface
-AddPackage libreoffice-still # LibreOffice maintenance branch
-AddPackage libreoffice-still-uk # Ukrainian language pack for LibreOffice still
-AddPackage libvncserver # Cross-platform C libraries that allow you to easily implement VNC server or client functionality
 AddPackage lldb # Next generation, high-performance debugger
 AddPackage lynx # A text browser for the World Wide Web
 AddPackage make # GNU make utility to maintain groups of programs
 AddPackage man-db # A utility for reading man pages
 AddPackage man-pages # Linux man pages
-AddPackage mariadb # Fast SQL database server, derived from MySQL
 AddPackage mc # Midnight Commander is a text based filemanager/shell that emulates Norton Commander
 AddPackage mediainfo # supplies technical and tag information about a video or audio file
-AddPackage mercurial # A scalable distributed SCM tool
 AddPackage mesa-demos # Mesa demos and tools incl. glxinfo + glxgears
 AddPackage minicom # A serial communication program
-AddPackage modem-manager-gui # Frontend for ModemManager daemon able to control specific modem functions
-AddPackage mousetweaks # Mouse accessibility enhancements
 AddPackage mpv # a free, open source, and cross-platform media player
-AddPackage mypy # Optional static typing for Python 2 and 3 (PEP484)
 AddPackage neofetch # A CLI system information tool written in BASH that supports displaying images.
 AddPackage neovim # Fork of Vim aiming to improve user experience, plugins, and GUIs
-AddPackage netbeans # IDE for Java, HTML5, PHP, Groovy, C and C++
-AddPackage nethack # A single player dungeon exploration game
 AddPackage networkmanager # Network connection manager and user applications
-AddPackage nginx-mainline # Lightweight HTTP server and IMAP/POP3 proxy server, mainline release
 AddPackage nmap # Utility for network discovery and security auditing
-AddPackage notification-daemon # Notification daemon for the desktop notifications framework
-AddPackage odt2txt # extracts the text out of OpenDocument Texts
-AddPackage openjpeg # An open source JPEG 2000 codec
 AddPackage openscad # The programmers solid 3D CAD modeller
 AddPackage pass # Stores, retrieves, generates, and synchronizes passwords securely
 AddPackage pavucontrol # PulseAudio Volume Control
-AddPackage pcmanfm # Extremely fast and lightweight file manager
-AddPackage pcsclite # PC/SC Architecture smartcard middleware library
-AddPackage php # A general-purpose scripting language that is especially suited to web development
-AddPackage php-fpm # FastCGI Process Manager for PHP
-AddPackage progress # Shows running coreutils basic commands and displays stats
 AddPackage pulseaudio # A featureful, general-purpose sound server
-AddPackage pyenv # Easily switch between multiple versions of Python
-AddPackage python-chardet # Python3 module for character encoding auto-detection
-AddPackage python-evdev # Python bindings for the Linux input subsystem
-AddPackage python-pylint # Analyzes Python code looking for bugs and signs of poor quality
 AddPackage python-pynvim # Python client for Neovim
 AddPackage python-pytest # Simple powerful testing with Python
-AddPackage python-pyudev # A pure Python 3.x binding to libudev
-AddPackage qrencode # C library for encoding data in a QR Code symbol.
 AddPackage qt5-wayland # Provides APIs for Wayland
-AddPackage qtcreator # Lightweight, cross-platform integrated development environment
 AddPackage remmina # remote desktop client written in GTK+
 AddPackage ripgrep # A search tool that combines the usability of ag with the raw speed of grep
-AddPackage samba # SMB Fileserver and AD Domain server
-AddPackage scdoc # Tool for generating roff manual pages
-AddPackage schroedinger # An implemenation of the Dirac video codec in ANSI C code
 AddPackage seahorse # GNOME application for managing PGP keys.
-AddPackage shellcheck # Shell script analysis tool
 AddPackage shotwell # A digital photo organizer designed for the GNOME desktop environment
 AddPackage speedtest-cli # Command line interface for testing internet bandwidth using speedtest.net
-AddPackage spice-gtk # GTK+ client library for SPICE
 AddPackage sshuttle # Transparent proxy server that forwards all TCP packets over ssh
-AddPackage stellarium # A stellarium with great graphics and a nice database of sky-objects
-AddPackage stow # Manage installation of multiple softwares in the same directory tree
 AddPackage strace # A diagnostic, debugging and instructional userspace tracer
-AddPackage swig # Generate scripting interfaces to C/C++ code
-AddPackage termite # A simple VTE-based terminal
-AddPackage texlive-langcyrillic # TeX Live - Fonts and macro packages to typeset Cyrillic texts
-AddPackage texlive-latexextra # TeX Live - Large collection of add-on packages for LaTeX
 AddPackage transmission-cli # Fast, easy, and free BitTorrent client (CLI tools, daemon and web client)
-AddPackage transmission-gtk # Fast, easy, and free BitTorrent client (GTK+ GUI)
-AddPackage uboot-tools # U-Boot bootloader utility tools
 AddPackage udiskie # Removable disk automounter using udisks
-AddPackage usb_modeswitch # Activating switchable USB devices on Linux.
-AddPackage vino # A VNC server for the GNOME desktop
-AddPackage virt-manager # Desktop user interface for managing virtual machines
-AddPackage virt-viewer # A lightweight interface for interacting with the graphical display of virtualized guest OS.
 AddPackage vlc # Multi-platform MPEG, VCD/DVD, and DivX player
 AddPackage w3m # Text-based Web browser as well as pager
 AddPackage wireshark-qt # Network traffic and protocol analyzer/sniffer - Qt GUI
 AddPackage wpa_supplicant # A utility providing key negotiation for WPA wireless networks
-AddPackage wvdial # A dialer program to connect to the Internet
 AddPackage x2goclient # a graphical client (Qt4) for the X2Go system
-AddPackage x2goserver # Open source graphical Remote Desktop and terminal server based on NX technology
-AddPackage xcb-util-errors # XCB errors library
-AddPackage xdg-user-dirs-gtk # Creates user dirs and asks to relocalize them
-AddPackage xdotool # Command-line X11 automation tool
-AddPackage yelp # Get help with GNOME
 AddPackage youtube-dl # A small command-line program to download videos from YouTube.com and a few more sites
-AddPackage youtube-viewer # Command line utility for viewing YouTube videos
 
 AddPackage --foreign bashdb # A debugger for Bash scripts loosely modeled on the gdb command syntax
 AddPackage --foreign bindfs # A FUSE filesystem for mirroring a directory to another directory, similar to 'mount --bind', with permission settings.

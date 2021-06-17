@@ -1,8 +1,5 @@
 AddPackage acpid # A daemon for delivering ACPI power management events with netlink support
 AddPackage android-udev # Udev rules to connect Android devices to your linux box
-AddPackage hwinfo # Hardware detection tool from openSUSE
-AddPackage iw # nl80211 based CLI configuration utility for wireless devices
-AddPackage lshw # A small tool to provide detailed information on the hardware configuration of the machine.
 AddPackage modprobed-db # Keeps track of EVERY kernel module ever used - useful for make localmodconfig
 AddPackage powertop # A tool to diagnose issues with power consumption and power management
 
