@@ -76,16 +76,10 @@ AddPackage youtube-dl # A small command-line program to download videos from You
 
 
 cat >"$(CreateFile /etc/mpv/mpv.conf)" <<EOF
-hwdec=vaapi
-vo=gpu
-#opengl-backend=wayland
-#vo=vaapi
+ytdl-format=bestvideo[height<=1080][ext=mp4]+bestaudio/bestvideo[height<=1080]+bestaudio/best
+sub-auto=fuzzy
+hwdec=auto
+gpu-context=wayland
 EOF
 
 CopyFile /etc/minirc.dfl
-
-sed -i -f - "$(GetPackageOriginalFile php /etc/php/php.ini)" <<EOF
-s|^;extension=mysqli|extension=mysqli|
-s|^;extension=pdo_mysql|extension=pdo_mysql|
-s|^;date.timezone =|date.timezone = Europe/Kiev|
-EOF

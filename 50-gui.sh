@@ -12,6 +12,7 @@ AddPackage mako # Lightweight notification daemon for Wayland
 AddPackage opendesktop-fonts # Chinese TrueType Fonts
 AddPackage otf-font-awesome # Iconic font designed for Bootstrap
 AddPackage picom # X compositor that may fix tearing issues
+AddPackage py3status # An extensible i3status replacement/wrapper written in python
 AddPackage python-basiciw # Retrieve information such as ESSID or signal quality from wireless cards (Python module)
 AddPackage python-colour # Colour representations manipulation library (RGB, HSL, web, ...)
 AddPackage qt5-script # Classes for making Qt applications scriptable. Provided for Qt 4.x compatibility

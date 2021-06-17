@@ -1,4 +1,7 @@
+AddPackage efibootmgr # Linux user-space application to modify the EFI Boot Manager
+AddPackage grub # GNU GRand Unified Bootloader (2)
 AddPackage linux # The Linux kernel and modules
+AddPackage linux-firmware # Firmware files for Linux
 AddPackage linux-lts # The Linux-lts kernel and modules
 AddPackage systemd-boot-pacman-hook # Pacman hook to upgrade systemd-boot after systemd upgrade.
 
