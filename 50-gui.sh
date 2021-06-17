@@ -8,7 +8,6 @@ AddPackage i3-wm # An improved dynamic tiling window manager
 AddPackage i3blocks # Define blocks for your i3bar status line
 AddPackage i3lock # An improved screenlocker based upon XCB and PAM
 AddPackage i3status # Generates status bar to use with i3bar, dzen2 or xmobar
-AddPackage lightdm-gtk-greeter-settings # Settings editor for the LightDM GTK+ Greeter
 AddPackage opendesktop-fonts # Chinese TrueType Fonts
 AddPackage python-colour # Colour representations manipulation library (RGB, HSL, web, ...)
 AddPackage sway # Tiling Wayland compositor and replacement for the i3 window manager
@@ -82,28 +81,6 @@ Section "InputClass"
     #Option "TapButton3" "2"
     #Option "PalmDetect" "1"
 EndSection
-EOF
-
-cat >"$(CreateFile /etc/pacman.d/hooks/lightdm-gtk-dark.hook)" <<EOF
-[Trigger]
-Type = File
-Operation = Install
-Operation = Upgrade
-Target = usr/share/xgreeters/lightdm-gtk-greeter.desktop
-
-[Action]
-Description = Updating dark theme for lightdm-gtk-greeter
-When = PostTransaction
-Exec = /usr/bin/sed -i 's/Exec=lightdm-gtk-greeter/Exec=env GTK_THEME=Adwaita:dark lightdm-gtk-greeter/' usr/share/xgreeters/lightdm-gtk-greeter.desktop
-EOF
-
-sed -i -f - "$(GetPackageOriginalFile lightdm-gtk-greeter /etc/lightdm/lightdm-gtk-greeter.conf)" <<EOF
-s/^#xft-dpi=/xft-dpi=150/
-s/^#xft-hintstyle=/xft-hintstyle=hintslight/
-EOF
-
-sed -i -f - "$(GetPackageOriginalFile lightdm /etc/lightdm/lightdm.conf)" <<EOF
-s/#greeter-session=.*/greeter-session=lightdm-gtk-greeter/
 EOF
 
 CreateLink /etc/fonts/conf.d/10-sub-pixel-rgb.conf ../conf.avail/10-sub-pixel-rgb.conf

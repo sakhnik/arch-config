@@ -62,7 +62,6 @@ CopyFile /etc/systemd/system/sshd@.service
 # Enable locking for the user named sakhnik
 CreateLink /etc/systemd/system/sleep.target.wants/i3lock@sakhnik.service /etc/systemd/system/i3lock@.service
 
-CreateLink /etc/systemd/system/display-manager.service /usr/lib/systemd/system/lightdm.service
 CreateLink /etc/systemd/system/getty.target.wants/getty@tty1.service /usr/lib/systemd/system/getty@.service
 CreateLink /etc/systemd/system/multi-user.target.wants/remote-fs.target /usr/lib/systemd/system/remote-fs.target
 CreateLink /etc/systemd/system/sleep.target.wants/root-suspend.service /etc/systemd/system/root-suspend.service
