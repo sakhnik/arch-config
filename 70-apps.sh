@@ -49,7 +49,6 @@ AddPackage minicom # A serial communication program
 AddPackage mpv # a free, open source, and cross-platform media player
 AddPackage neofetch # A CLI system information tool written in BASH that supports displaying images.
 AddPackage neovim # Fork of Vim aiming to improve user experience, plugins, and GUIs
-AddPackage networkmanager # Network connection manager and user applications
 AddPackage nmap # Utility for network discovery and security auditing
 AddPackage openscad # The programmers solid 3D CAD modeller
 AddPackage pass # Stores, retrieves, generates, and synchronizes passwords securely

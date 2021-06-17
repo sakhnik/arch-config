@@ -4,8 +4,11 @@ AddPackage i3blocks # Define blocks for your i3bar status line
 AddPackage i3lock # An improved screenlocker based upon XCB and PAM
 AddPackage i3status # Generates status bar to use with i3bar, dzen2 or xmobar
 AddPackage opendesktop-fonts # Chinese TrueType Fonts
+AddPackage picom # X compositor that may fix tearing issues
 AddPackage python-basiciw # Retrieve information such as ESSID or signal quality from wireless cards (Python module)
 AddPackage python-colour # Colour representations manipulation library (RGB, HSL, web, ...)
+AddPackage qt5-script # Classes for making Qt applications scriptable. Provided for Qt 4.x compatibility
+AddPackage qt5-tools # A cross-platform application and UI framework (Development Tools, QtHelp)
 AddPackage sway # Tiling Wayland compositor and replacement for the i3 window manager
 AddPackage swayidle # Idle management daemon for Wayland
 AddPackage swaylock # Screen locker for Wayland

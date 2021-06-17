@@ -1,5 +1,9 @@
+AddPackage n2n # A Peer-to-peer VPN software which makes it easy to create virtual networks bypassing intermediate firewalls
+AddPackage network-manager-applet # Applet for managing network connections
+AddPackage networkmanager # Network connection manager and user applications
 AddPackage nfs-utils # Support programs for Network File Systems
 AddPackage nm-connection-editor # NetworkManager GUI connection editor and widgets
+AddPackage ntp # Network Time Protocol reference implementation
 AddPackage tinc-pre # VPN (Virtual Private Network) daemon (Pre-release)
 
 
