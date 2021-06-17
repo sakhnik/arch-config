@@ -1,4 +1,5 @@
 AddPackage automake # A GNU tool for automatically creating Makefiles
+AddPackage base # Minimal package set to define a basic Arch Linux installation
 AddPackage dhcpcd # RFC2131 compliant DHCP client daemon
 AddPackage dialog # A tool to display dialog boxes from shell scripts
 AddPackage fakeroot # Tool for simulating superuser privileges
@@ -30,8 +31,6 @@ AddPackage valgrind # Tool to help find memory-management problems in programs
 AddPackage wget # Network utility to retrieve files from the Web
 AddPackage whois # Intelligent WHOIS client
 AddPackage zsh # A very advanced and programmable command interpreter (shell) for UNIX
-
-AddPackage --foreign python-basiciw # Retrieve information such as ESSID or signal quality from wireless cards (Python module)
 
 CreateLink /etc/os-release ../usr/lib/os-release
 # Local time zone

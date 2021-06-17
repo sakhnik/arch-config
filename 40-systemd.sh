@@ -2,8 +2,6 @@ AddPackage linux # The Linux kernel and modules
 AddPackage linux-lts # The Linux-lts kernel and modules
 AddPackage systemd-boot-pacman-hook # Pacman hook to upgrade systemd-boot after systemd upgrade.
 
-AddPackage --foreign earlyoom # Early OOM Daemon for Linux
-
 
 cat >"$(CreateFile /etc/systemd/journald.conf.d/00-journal-size.conf)" <<EOF
 [Journal]

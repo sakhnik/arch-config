@@ -8,8 +8,14 @@ AddPackage arch-install-scripts # Scripts to aid in installing Arch Linux
 AddPackage asciinema # Record and share terminal sessions
 AddPackage asp # Arch Linux build source file management tool
 AddPackage baobab # A graphical directory tree analyzer
+AddPackage bash-language-server # Bash language server implementation based on Tree Sitter and its grammar for Bash
+AddPackage bashdb # A debugger for Bash scripts loosely modeled on the gdb command syntax
+AddPackage bc # An arbitrary precision calculator language
+AddPackage bindfs # A FUSE filesystem for mirroring a directory to another directory, similar to 'mount --bind', with permission settings.
+AddPackage binfmt-qemu-static # Register qemu-static interpreters for various binary formats
 AddPackage bluez # Daemons for the bluetooth protocol stack
 AddPackage bluez-utils # Development and debugging utilities for the bluetooth protocol stack
+AddPackage brillo # Control the brightness of backlight and keyboard LED devices
 AddPackage chromium # A web browser built for speed, simplicity, and security
 AddPackage encfs # Encrypted filesystem in user-space
 AddPackage evince # Document viewer (PDF, Postscript, djvu, tiff, dvi, XPS, SyncTex support with gedit, comics books (cbr,cbz,cb7 and cbt))
@@ -51,6 +57,7 @@ AddPackage pavucontrol # PulseAudio Volume Control
 AddPackage pulseaudio # A featureful, general-purpose sound server
 AddPackage python-pynvim # Python client for Neovim
 AddPackage python-pytest # Simple powerful testing with Python
+AddPackage qemu-user-static-bin # A generic and open source machine emulator, statically linked
 AddPackage qt5-wayland # Provides APIs for Wayland
 AddPackage remmina # remote desktop client written in GTK+
 AddPackage ripgrep # A search tool that combines the usability of ag with the raw speed of grep
@@ -67,30 +74,6 @@ AddPackage wireshark-qt # Network traffic and protocol analyzer/sniffer - Qt GUI
 AddPackage wpa_supplicant # A utility providing key negotiation for WPA wireless networks
 AddPackage x2goclient # a graphical client (Qt4) for the X2Go system
 AddPackage youtube-dl # A small command-line program to download videos from YouTube.com and a few more sites
-
-AddPackage --foreign bashdb # A debugger for Bash scripts loosely modeled on the gdb command syntax
-AddPackage --foreign bindfs # A FUSE filesystem for mirroring a directory to another directory, similar to 'mount --bind', with permission settings.
-AddPackage --foreign binfmt-qemu-static # Register qemu-static interpreters for various binary formats
-AddPackage --foreign bluez-firmware # Firmwares for Broadcom BCM203x and STLC2300 Bluetooth chips
-AddPackage --foreign bluez-rfcomm # deprecated rfcomm tool from bluez
-AddPackage --foreign brillo # Control the brightness of backlight and keyboard LED devices
-AddPackage --foreign cquery # Low-latency vscode language server for large C++ code-bases, powered by libclang.
-AddPackage --foreign doctest # The lightest feature rich C++ single header testing framework
-AddPackage --foreign libcatch-cpp-headers # C++-native framework for unit-tests using only a header file
-AddPackage --foreign mimeo # Open files by MIME-type or file name using regular expressions.
-AddPackage --foreign pamtester # Tiny program to test the pluggable authentication modules (PAM) facility
-AddPackage --foreign peerflix # Streaming torrent client for node.js
-AddPackage --foreign php-language-server # PHP language server implementation
-AddPackage --foreign python2-neovim-git # Python client to neovim, git version. Use this to keep up with neovim-git
-AddPackage --foreign qemu-user-static-bin # A generic and open source machine emulator, statically linked
-AddPackage --foreign realvnc-vnc-viewer # VNC remote desktop client software by RealVNC
-AddPackage --foreign remark-cli # CLI to process markdown with remark using plugins
-AddPackage --foreign remark-lint # Lint markdown with remark
-AddPackage --foreign teamviewer # All-In-One Software for Remote Support and Online Meetings
-AddPackage --foreign tor-browser # Tor Browser Bundle
-AddPackage --foreign universal-ctags-git # Multilanguage reimplementation of the Unix ctags utility
-AddPackage --foreign xdg-utils-mimeo # Command line tools that assist applications with a variety of desktop integration tasks; patched to use mimeo
-
 
 
 cat >"$(CreateFile /etc/mpv/mpv.conf)" <<EOF

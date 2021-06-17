@@ -4,6 +4,7 @@ AddPackage i3blocks # Define blocks for your i3bar status line
 AddPackage i3lock # An improved screenlocker based upon XCB and PAM
 AddPackage i3status # Generates status bar to use with i3bar, dzen2 or xmobar
 AddPackage opendesktop-fonts # Chinese TrueType Fonts
+AddPackage python-basiciw # Retrieve information such as ESSID or signal quality from wireless cards (Python module)
 AddPackage python-colour # Colour representations manipulation library (RGB, HSL, web, ...)
 AddPackage sway # Tiling Wayland compositor and replacement for the i3 window manager
 AddPackage swayidle # Idle management daemon for Wayland
@@ -11,19 +12,16 @@ AddPackage swaylock # Screen locker for Wayland
 AddPackage ttf-baekmuk # Korean fonts
 AddPackage ttf-liberation # Red Hats Liberation fonts.
 AddPackage ttf-linux-libertine # Serif (Libertine) and Sans Serif (Biolinum) OpenType fonts with large Unicode coverage
+AddPackage ttf-ms-fonts # Core TTF Fonts from Microsoft
 AddPackage ttf-opensans # Sans-serif typeface commissioned by Google
 AddPackage wl-clipboard # Command-line copy/paste utilities for Wayland
 AddPackage xautolock # An automatic X screen-locker/screen-saver
 AddPackage xf86-video-intel # X.org Intel i810/i830/i915/945G/G965+ video drivers
+AddPackage xkb-switch # Program that allows to query and change the XKB layout state
 AddPackage xorg-server # Xorg X server
 AddPackage xorg-xdpyinfo # Display information utility for X
 AddPackage xorg-xinput # Small commandline tool to configure devices
 AddPackage xorg-xrandr # Primitive command line interface to RandR extension
-
-AddPackage --foreign i3pystatus # i3status replacement written in python for the i3 window manager
-AddPackage --foreign ttf-ms-fonts # Core TTF Fonts from Microsoft
-AddPackage --foreign ttf-raleway # An elegant sans-serif font, designed in a single thin weight.
-AddPackage --foreign xkb-switch # Program that allows to query and change the XKB layout state
 
 cat >"$(CreateFile /etc/X11/xorg.conf.d/00-keyboard.conf)" <<EOF
 Section "InputClass"
